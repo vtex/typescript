@@ -1,4 +1,4 @@
-# WIP -https://github.com/vtex/web-coding-standards
+# WIP - Web Coding Standards
 
 Main repository for VTEX's web coding standards. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
 
