@@ -1,6 +1,6 @@
-# WIP - Front-End Standards
+# WIP -https://github.com/vtex/web-coding-standards
 
-Main repository for VTEX's front-end coding style guide. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
+Main repository for VTEX's web coding standards. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
 
 ## Project structure
 
