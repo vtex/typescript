@@ -1,4 +1,4 @@
-# WIP - Front-End Coding Style Guide
+# WIP - Front-End Standards
 
 Main repository for VTEX's front-end coding style guide. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
 
