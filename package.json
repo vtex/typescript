@@ -1,0 +1,36 @@
+{
+  "name": "@vtex/javascript",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "contributors": [
+    "Breno Calazans <breno@vtex.com.br>",
+    "Christian Kaisermann <christian.andrade@vtex.com.br>"
+  ],
+  "license": "MIT",
+  "repository": "vtex/javascript",
+  "bugs": {
+    "url": "https://github.com/vtex/javascript/issues"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean && lerna run clean",
+    "format": "prettier --list-different \"./**/*.{ts,js,json,md}\"",
+    "format:fix": "prettier --write \"./**/*.{ts,js,json,md}\"",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "pre-commit": "yarn lint-staged",
+    "pre-push": "yarn format-check",
+    "postinstall": "lerna bootstrap && yarn build && lerna link",
+    "test": "lerna run test --concurrency 1"
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.0.1",
+    "eslint": "^6.7.0",
+    "husky": "^3.0.9",
+    "lerna": "^3.18.4",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}

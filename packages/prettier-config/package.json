@@ -1,0 +1,23 @@
+{
+  "name": "@vtex/prettier-config",
+  "version": "0.0.1",
+  "description": "VTEX shared prettier config",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtex/prettier-config.git"
+  },
+  "contributors": [
+    "Christian Kaisermann <christian.andrade@vtex.com.br>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "prettier": "^1.19.1"
+  }
+}

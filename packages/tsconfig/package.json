@@ -1,0 +1,9 @@
+{
+  "name": "@vtex/tsconfig",
+  "version": "0.3.0",
+  "main": "tsconfig.json",
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^3.7.5"
+  }
+}

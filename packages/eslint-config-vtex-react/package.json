@@ -1,0 +1,48 @@
+{
+  "name": "eslint-config-vtex-react",
+  "version": "5.1.0",
+  "description": "VTEX's eslint config for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtex/eslint-config-vtex-react.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "config",
+    "vtex",
+    "react"
+  ],
+  "author": "Breno Calazans",
+  "contributors": [
+    "Christian Kaisermann <christian.andrade@vtex.com.br>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brenoc/eslint-config-vtex-react/issues"
+  },
+  "homepage": "https://github.com/brenoc/eslint-config-vtex-react#readme",
+  "dependencies": {
+    "eslint-config-vtex": "^11.2.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "eslint-config-vtex",
+  "version": "11.2.1",
+  "description": "VTEX's eslint config",
+  "main": "index.js",
+  "scripts": {
+    "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check",
+    "dump-config": "eslint --print-config index.js > config-dump.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtex/eslint-config-vtex.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "vtex"
+  ],
+  "author": "Breno Calazans",
+  "contributors": [
+    "Christian Kaisermann <christian.andrade@vtex.com.br>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vtex/eslint-config-vtex/issues"
+  },
+  "homepage": "https://github.com/vtex/eslint-config-vtex#readme",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "confusing-browser-globals": "^1.0.9",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-prettier": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.0.1",
+    "eslint": "^6.8.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es2017", "dom", "es2018.promise", "esnext.asynciterable"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es2017"
+  },
+  "typeAcquisition": {
+    "enable": false
+  }
+}
