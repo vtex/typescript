@@ -10,9 +10,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    // waiting for https://github.com/typescript-eslint/typescript-eslint/issues/50
     // Enforce explicit function return types
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+    // waiting for https://github.com/typescript-eslint/typescript-eslint/issues/50
     '@typescript-eslint/explicit-function-return-type': 'off',
 
     // Prevent unused declared variables
