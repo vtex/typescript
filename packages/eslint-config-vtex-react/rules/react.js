@@ -97,7 +97,8 @@ module.exports = {
 
     // Remove unneeded fragments
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md
-    'react/jsx-no-useless-fragment': 'error',
+    // TODO, waiting for https://github.com/DefinitelyTyped/DefinitelyTyped/issues/20356
+    'react/jsx-no-useless-fragment': 'off',
 
     // Enforce a standard way of defining function components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react/function-component-definition.md
@@ -112,10 +113,6 @@ module.exports = {
         extensions: ['.tsx', '.jsx'],
       },
     ],
-
-    // Prevent URLS starting with `javascript:`
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md
-    'react/jsx-no-script-url': 'error',
 
     // Remove unnecessary braces in attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
@@ -149,7 +146,8 @@ module.exports = {
 
     // Enforce the style attribute to be an object
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
-    'react/style-prop-object': 'error',
+    // TODO, maybe enable? it's annoying for the style prop of react-intl components
+    'react/style-prop-object': 'off',
 
     // Prevent void DOM elements from receiving children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md

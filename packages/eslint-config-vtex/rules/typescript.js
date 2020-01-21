@@ -11,6 +11,10 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    // Enforce explicit function return type
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+    '@typescript-eslint/explicit-function-return-type': 'off',
+
     // Prevent unused declared variables
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
     '@typescript-eslint/no-unused-vars': [
@@ -35,5 +39,10 @@ module.exports = {
     // Enforce a consitent way to type objects
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+
+    // Disallow non null assertions (!), comes from the recommended config
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
+    // TODO, maybe disable
+    '@typescript-eslint/no-non-null-assertion': 'warn',
   },
 }

@@ -14,7 +14,12 @@ module.exports = {
 
     // Disallow declaration of variables already declared in the outer scope
     // https://eslint.org/docs/rules/no-shadow
-    'no-shadow': 'error',
+    'no-shadow': [
+      'error',
+      {
+        allow: ['done', 'next', 'resolve', 'reject', 'cb'],
+      },
+    ],
 
     // Disallow shadowing of names such as arguments
     // https://eslint.org/docs/rules/no-shadow-restricted-names

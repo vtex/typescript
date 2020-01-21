@@ -30,7 +30,8 @@ module.exports = {
 
     // Enforce a maximum number of classes per file
     // https://eslint.org/docs/rules/max-classes-per-file
-    'max-classes-per-file': ['error', 1],
+    // TODO, maybe turn on
+    'max-classes-per-file': ['off', 1],
 
     // Disallow the use of alert, confirm, and prompt
     // https://eslint.org/docs/rules/no-alert
@@ -110,7 +111,7 @@ module.exports = {
     'no-magic-numbers': [
       'warn',
       {
-        ignore: [],
+        ignore: [1, 2, 3],
         ignoreArrayIndexes: true,
         enforceConst: true,
         detectObjects: false,

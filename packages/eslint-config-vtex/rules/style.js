@@ -66,7 +66,8 @@ module.exports = {
 
     // Disallow negated conditions
     // https://eslint.org/docs/rules/no-negated-condition
-    'no-negated-condition': 'error',
+    // TODO discuss, maybe too much
+    'no-negated-condition': 'off',
 
     // Disallow use of the Object constructor
     // https://eslint.org/docs/rules/no-new-object
