@@ -7,10 +7,10 @@ Main repository for VTEX's javascript standards. Issues should be used to start 
 ```tree
 docs/                         # standards documentation
 packages/                     # standards related packages
-├── eslint-config-vtex
-├── eslint-config-vtex-react
-├── prettier-config
-└── tsconfig
+├── eslint-config-vtex        # base eslint rule preset
+├── eslint-config-vtex-react  # eslint rule preset for react projects
+├── prettier-config           # prettier preset of all front-end projects
+└── tsconfig                  # base tsconfig for all typescript projects
 ```
 
 ## Contributing
