@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
   ],
@@ -10,11 +11,6 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    // Enforce explicit function return types
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
-    // waiting for https://github.com/typescript-eslint/typescript-eslint/issues/50
-    '@typescript-eslint/explicit-function-return-type': 'off',
-
     // Prevent unused declared variables
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
     '@typescript-eslint/no-unused-vars': [
@@ -24,5 +20,20 @@ module.exports = {
         argsIgnorePattern: '_+',
       },
     ],
+
+    // Enforce a consistent way of typing arrays
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
+    // TODO https://github.com/vtex/javascript/issues/35
+    '@typescript-eslint/array-type': [
+      'off',
+      {
+        default: 'array-simple',
+        readonly: 'array-simple',
+      },
+    ],
+
+    // Enforce a consitent way to type objects
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
   },
 }
