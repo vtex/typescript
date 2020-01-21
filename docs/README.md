@@ -1,6 +1,6 @@
-# WIP - Web Coding Standards
+# WIP - Javascript Standards
 
-Main repository for VTEX's web coding standards. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
+Main repository for VTEX's javascript standards. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
 
 ## Project structure
 
