@@ -97,11 +97,11 @@ module.exports = {
 
     // Remove unneeded fragments
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md
-    // TODO, waiting for https://github.com/DefinitelyTyped/DefinitelyTyped/issues/20356
+    // TODO waiting for https://github.com/DefinitelyTyped/DefinitelyTyped/issues/20356
     'react/jsx-no-useless-fragment': 'off',
 
     // Enforce a standard way of defining function components
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react/function-component-definition.md
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
     // TODO enable?
     'react/function-component-definition': 'off',
 

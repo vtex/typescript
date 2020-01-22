@@ -15,7 +15,7 @@ module.exports = {
     // Require all requires be top-level
     // https://eslint.org/docs/rules/global-require
     // TODO https://github.com/vtex/front-end-coding-standard/issues/28
-    'global-require': 'off',
+    'global-require': 'error',
 
     // Disallow use of new operator with the require function
     // https://eslint.org/docs/rules/no-new-require

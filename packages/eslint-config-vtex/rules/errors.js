@@ -7,8 +7,7 @@ module.exports = {
 
     // Disallow await inside of loops
     // https://eslint.org/docs/rules/no-await-in-loop
-    // TODO: https://github.com/vtex/front-end-coding-standard/issues/26
-    'no-await-in-loop': 'off',
+    'no-await-in-loop': 'error',
 
     // Disallow assignment in conditional expressions
     // https://eslint.org/docs/rules/no-cond-assign
@@ -24,7 +23,7 @@ module.exports = {
 
     // Disallow assignments that can lead to race conditions due to usage of await or yield
     // https://eslint.org/docs/rules/require-atomic-updates
-    // TODO: https://github.com/vtex/front-end-coding-standard/issues/27
+    // TODO: https://github.com/vtex/javascript/issues/27
     'require-atomic-updates': 'off',
 
     //! Require eslint >= 6.7.0
