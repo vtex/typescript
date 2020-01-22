@@ -10,10 +10,28 @@ Give that you already have `prettier` installed, run:
 yarn add -D @vtex/prettier-config
 ```
 
-Then add it to your `.prettierrc` configuration file:
+## Usage
+
+After installing the module, add it to your `.prettierrc` configuration file:
 
 ```jsonc
 "@vtex/prettier-config"
 ```
 
-For other configuration methods, please check the [Prettier documentation](https://prettier.io/docs/en/configuration.html).
+Or add it to your `package.json`:
+
+```json
+{
+  ...
+  "prettier": "@vtex/prettier-config"
+  ...
+}
+```
+
+Differently from `eslint`, `prettier` shared presets are not extensible, so if you want to override some property, which is not encouraged, you'll need to use the `.prettierrc.js` file.
+
+For more information about configuring `prettier`, please check the [Prettier configuration documentation](https://prettier.io/docs/en/configuration.html).
+
+## References
+
+- [`prettier` options documentation](https://prettier.io/docs/en/options.html)
