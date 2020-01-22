@@ -9,7 +9,8 @@ module.exports = {
 
     // Enforce a callback to return
     // https://eslint.org/docs/rules/callback-return
-    'callback-return': 'error',
+    //! maybe too annoying
+    'callback-return': 'off',
 
     // Require all requires be top-level
     // https://eslint.org/docs/rules/global-require

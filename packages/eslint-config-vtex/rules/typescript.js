@@ -12,7 +12,12 @@ module.exports = {
       parserOptions: {
         ecmaVersion: 2019,
         sourceType: 'module',
-        project: 'tsconfig.json',
+        project: [
+          '*/tsconfig.eslint.json',
+          './tsconfig.eslint.json',
+          '*/tsconfig.json',
+          'tsconfig.json',
+        ],
       },
       rules: {
         // Enforce explicit function return type
@@ -21,6 +26,7 @@ module.exports = {
 
         // Prevent unused declared variables
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+        'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [
           'warn',
           {
@@ -33,7 +39,7 @@ module.exports = {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
         // TODO https://github.com/vtex/javascript/issues/35
         '@typescript-eslint/array-type': [
-          'off',
+          'warn',
           {
             default: 'array-simple',
             readonly: 'array-simple',
@@ -138,6 +144,18 @@ module.exports = {
           'error',
           {
             allow: ['arrowFunctions', 'functions', 'methods'],
+          },
+        ],
+
+        // Require camel case names
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/camelcase.md
+        camelcase: 'off',
+        '@typescript-eslint/camelcase': [
+          'error',
+          {
+            properties: 'never',
+            genericType: 'always',
+            ignoreDestructuring: false,
           },
         ],
       },

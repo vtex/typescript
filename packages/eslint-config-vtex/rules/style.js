@@ -2,7 +2,13 @@ module.exports = {
   rules: {
     // Require camel case names
     // https://eslint.org/docs/rules/camelcase
-    camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
+    camelcase: [
+      'error',
+      {
+        properties: 'never',
+        ignoreDestructuring: false,
+      },
+    ],
 
     // Require function expressions to have a name
     // https://eslint.org/docs/rules/func-names
