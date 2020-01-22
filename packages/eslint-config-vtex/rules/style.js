@@ -45,8 +45,13 @@ module.exports = {
     ],
 
     // Limit the number of parameters that can be used in the function declaration.
-    // TODO https://github.com/vtex/front-end-coding-standard/issues/16
-    'max-params': ['off', 3],
+    // https://eslint.org/docs/rules/max-params
+    'max-params': [
+      'warn',
+      {
+        max: 3,
+      },
+    ],
 
     // Require a capital letter for constructors
     // https://eslint.org/docs/rules/new-cap
