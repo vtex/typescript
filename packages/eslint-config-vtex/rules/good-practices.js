@@ -108,10 +108,11 @@ module.exports = {
 
     // Disallow magic numbers
     // https://eslint.org/docs/rules/no-magic-numbers
+    // TODO enable? maybe too much
     'no-magic-numbers': [
-      'warn',
+      'off',
       {
-        ignore: [1, 2, 3],
+        ignore: [0, 1, 2, 3],
         ignoreArrayIndexes: true,
         enforceConst: true,
         detectObjects: false,

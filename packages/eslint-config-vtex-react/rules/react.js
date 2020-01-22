@@ -146,7 +146,7 @@ module.exports = {
 
     // Enforce the style attribute to be an object
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
-    // TODO, maybe enable? it's annoying for the style prop of react-intl components
+    // TODO maybe enable? it's annoying for the style prop of react-intl components
     'react/style-prop-object': 'off',
 
     // Prevent void DOM elements from receiving children

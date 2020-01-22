@@ -107,10 +107,15 @@ module.exports = {
 
         // Disallows the use of eval()-like methods
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
+        // TODO enable? maybe too much
         'no-magic-numbers': 'off',
         '@typescript-eslint/no-magic-numbers': [
-          'warn',
+          'off',
           {
+            ignore: [0, 1, 2, 3],
+            ignoreArrayIndexes: true,
+            enforceConst: true,
+            detectObjects: false,
             ignoreNumericLiteralTypes: true,
             ignoreEnums: true,
           },
