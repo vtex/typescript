@@ -10,6 +10,10 @@ module.exports = {
     './rules/typescript.js',
     './rules/prettier.js',
   ],
+  parserOptions: {
+    ecmaVersion: 2019,
+    sourceType: 'module',
+  },
   globals: {
     __DEV__: true,
   },
