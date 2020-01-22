@@ -13,10 +13,8 @@ module.exports = {
         ecmaVersion: 2019,
         sourceType: 'module',
         project: [
-          // '*/tsconfig.eslint.json',
-          // './tsconfig.eslint.json',
-          '*/tsconfig.json',
-          './tsconfig.json',
+          './tsconfig{.eslint.json,.json}',
+          '*/tsconfig{.eslint.json,.json}',
         ],
       },
       rules: {

@@ -30,15 +30,9 @@ The preset will automatically load Typescript rules when dealing with `.ts` or `
 ```jsonc
 // tsconfig.eslint.json
 {
-  "extends": "@vtex/tsconfig",
-  "include": [
-    "src/**/*.ts",
-    "test/**/*.ts",
-    "typings/**/*.ts",
-    // ...
-    // if you have a mixed JS/TS codebase, don't forget to include your JS files
-    "src/**/*.js"
-  ]
+  "extends": "./tsconfig.json",
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": []
 }
 ```
 
