@@ -29,10 +29,6 @@ module.exports = {
     // https://eslint.org/docs/rules/no-undef-init
     'no-undef-init': 'error',
 
-    // Disallow use of undefined variable
-    // https://eslint.org/docs/rules/no-undefined
-    'no-undefined': 'error',
-
     // Disallow declaration of variables that are not used in the code
     // https://eslint.org/docs/rules/no-unused-vars
     'no-unused-vars': [

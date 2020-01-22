@@ -130,6 +130,16 @@ module.exports = {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-useless-constructor.md
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
+
+        // Disallow empty functions, except for standalone funcs/arrows
+        // https://eslint.org/docs/rules/no-empty-function
+        'no-empty-function': 'off',
+        '@typescript-eslint/no-empty-function': [
+          'error',
+          {
+            allow: ['arrowFunctions', 'functions', 'methods'],
+          },
+        ],
       },
     },
   ],
