@@ -1,4 +1,4 @@
-# eslint-config-vtex-react
+# `eslint-config-vtex-react`
 
 This package provides VTEX's `.eslintrc` for React projects as an extensible shared config.
 

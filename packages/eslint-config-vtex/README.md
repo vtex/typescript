@@ -1,4 +1,4 @@
-# eslint-config-vtex
+# `eslint-config-vtex`
 
 This package provides VTEX's `.eslintrc` as an extensible shared config.
 
