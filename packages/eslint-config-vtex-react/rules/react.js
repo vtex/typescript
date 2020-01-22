@@ -27,7 +27,7 @@ module.exports = {
 
     // Require stateless functions when not using lifecycle methods, setState or ref
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-    'react/prefer-stateless-function': 'off',
+    'react/prefer-stateless-function': 'error',
 
     // Prevent extra closing tags for components without children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
