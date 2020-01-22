@@ -15,9 +15,25 @@ module.exports = {
         project: [
           './tsconfig{.eslint.json,.json}',
           '*/tsconfig{.eslint.json,.json}',
+          '*/*/tsconfig{.eslint.json,.json}',
         ],
       },
       rules: {
+        // Enforce explicit accessibility modifiers on class properties and methods
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md
+        '@typescript-eslint/explicit-member-accessibility': [
+          'error',
+          {
+            accessibility: 'explicit',
+            overrides: {
+              accessors: 'explicit',
+              constructors: 'no-public',
+              methods: 'explicit',
+              parameterProperties: 'explicit',
+            },
+          },
+        ],
+
         // Enforce explicit function return type
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
         '@typescript-eslint/explicit-function-return-type': 'off',

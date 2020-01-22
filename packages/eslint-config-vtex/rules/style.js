@@ -30,10 +30,6 @@ module.exports = {
     // TODO https://github.com/vtex/front-end-coding-standard/issues/30
     'no-inline-comments': 'off',
 
-    // Require or disallow an empty line between class members
-    // https://eslint.org/docs/rules/lines-between-class-members
-    'lines-between-class-members': ['error', 'always'],
-
     // Require or disallow newlines around directives
     // https://eslint.org/docs/rules/lines-around-directive
     'lines-around-directive': [
