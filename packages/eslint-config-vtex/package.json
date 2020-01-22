@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vtex/eslint-config-vtex.git"
+    "url": "git+https://github.com/vtex/javascript.git"
   },
   "keywords": [
     "eslint",
@@ -22,9 +22,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vtex/eslint-config-vtex/issues"
+    "url": "https://github.com/vtex/javascript/issues"
   },
-  "homepage": "https://github.com/vtex/eslint-config-vtex#readme",
+  "homepage": "https://github.com/vtex/javascript#readme",
   "files": [
     "index.js"
   ],
