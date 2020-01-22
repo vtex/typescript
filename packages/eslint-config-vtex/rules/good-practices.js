@@ -136,28 +136,6 @@ module.exports = {
     // https://eslint.org/docs/rules/no-octal-escape
     'no-octal-escape': 'error',
 
-    // Disallow reassignment of function parameters
-    // https://eslint.org/docs/rules/no-param-reassign
-    // TODO discuss
-    'no-param-reassign': [
-      'off',
-      {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'acc', // for reduce accumulators
-          'accumulator', // for reduce accumulators
-          'e', // for e.returnvalue
-          'ctx', // for Koa routing
-          'req', // for Express requests
-          'request', // for Express requests
-          'res', // for Express responses
-          'response', // for Express responses
-          '$scope', // for Angular 1 scopes
-          'staticContext', // for ReactRouter context
-        ],
-      },
-    ],
-
     // Disallow usage of __proto__ property
     // https://eslint.org/docs/rules/no-proto
     'no-proto': 'error',
@@ -285,14 +263,14 @@ module.exports = {
     // https://eslint.org/docs/rules/prefer-destructuring
     // TODO https://github.com/vtex/front-end-standards/issues/33
     'prefer-destructuring': [
-      'off',
+      'warn',
       {
         VariableDeclarator: {
-          array: false,
+          array: true,
           object: true,
         },
         AssignmentExpression: {
-          array: true,
+          array: false,
           object: false,
         },
       },
