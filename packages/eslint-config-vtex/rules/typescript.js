@@ -13,8 +13,8 @@ module.exports = {
         ecmaVersion: 2019,
         sourceType: 'module',
         project: [
-          '*/tsconfig.eslint.json',
-          './tsconfig.eslint.json',
+          // '*/tsconfig.eslint.json',
+          // './tsconfig.eslint.json',
           '*/tsconfig.json',
           './tsconfig.json',
         ],
@@ -24,20 +24,8 @@ module.exports = {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
         '@typescript-eslint/explicit-function-return-type': 'off',
 
-        // Prevent unused declared variables
-        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': [
-          'warn',
-          {
-            ignoreRestSiblings: true,
-            argsIgnorePattern: '_+',
-          },
-        ],
-
         // Enforce a consistent way of typing arrays
-        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
-        // TODO https://github.com/vtex/javascript/issues/35
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.mdv
         '@typescript-eslint/array-type': [
           'warn',
           {
@@ -55,7 +43,6 @@ module.exports = {
 
         // Disallow non null assertions (!), comes from the recommended config
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
-        // TODO, maybe disable
         '@typescript-eslint/no-non-null-assertion': 'warn',
 
         // Enforce that when adding two variables, operands must both be of type number or of type string
@@ -111,6 +98,20 @@ module.exports = {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
         '@typescript-eslint/no-implied-eval': 'error',
 
+        //! extensions of native eslint rules
+        //! when modifying a rule here, make sure to modify the native one and vice-versa
+
+        // Prevent unused declared variables
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          {
+            ignoreRestSiblings: true,
+            argsIgnorePattern: '_+',
+          },
+        ],
+
         // Disallows the use of eval()-like methods
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
         // TODO enable? maybe too much
@@ -156,6 +157,20 @@ module.exports = {
             properties: 'never',
             genericType: 'always',
             ignoreDestructuring: false,
+          },
+        ],
+
+        // Disallow use of variables before they are defined
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': [
+          'error',
+          {
+            functions: false,
+            classes: false,
+            variables: true,
+            enums: false,
+            typedefs: false,
           },
         ],
       },

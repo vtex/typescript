@@ -1,4 +1,4 @@
-rules/
+# rules/
 node_modules/
 coverage/
 dist/

@@ -33,15 +33,21 @@ module.exports = {
     // https://eslint.org/docs/rules/no-unused-vars
     'no-unused-vars': [
       'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
+      {
+        ignoreRestSiblings: true,
+        argsIgnorePattern: '_+',
+      },
     ],
 
     // Disallow use of variables before they are defined
     // https://eslint.org/docs/rules/no-use-before-define
-    // TODO https://github.com/vtex/front-end-coding-standard/issues/29
     'no-use-before-define': [
       'off',
-      { functions: true, classes: true, variables: true },
+      {
+        functions: false,
+        classes: false,
+        variables: true,
+      },
     ],
   },
 }

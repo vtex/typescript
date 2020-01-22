@@ -4,8 +4,8 @@
   "description": "VTEX's eslint config for React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check"
+    "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check",
+    "dump-config": "eslint --print-config index.js > config-dump.json"
   },
   "repository": {
     "type": "git",
