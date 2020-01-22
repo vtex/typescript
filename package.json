@@ -13,6 +13,20 @@
   "bugs": {
     "url": "https://github.com/vtex/javascript/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*{json,md}": [
+      "prettier --write"
+    ]
+  },
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean && lerna run clean",
@@ -26,8 +40,9 @@
   },
   "devDependencies": {
     "eslint": "^6.7.0",
-    "husky": "^3.0.9",
+    "husky": "^4.2.0",
     "lerna": "^3.18.4",
+    "lint-staged": "^10.0.2",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   }
