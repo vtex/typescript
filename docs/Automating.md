@@ -1,1 +1,1 @@
-# Automating Linting and Formatting
+# Automating
