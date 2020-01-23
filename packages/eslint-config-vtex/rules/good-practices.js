@@ -164,18 +164,6 @@ module.exports = {
     // https://eslint.org/docs/rules/no-sequences
     'no-sequences': 'error',
 
-    // Disallow usage of expressions in statement position
-    // https://eslint.org/docs/rules/no-unused-expressions
-    // TODO https://github.com/vtex/web-coding-standards/issues/34
-    'no-unused-expressions': [
-      'off',
-      {
-        allowShortCircuit: false,
-        allowTernary: false,
-        allowTaggedTemplates: false,
-      },
-    ],
-
     // Disallow unused labels
     // https://eslint.org/docs/rules/no-unused-labels
     'no-unused-labels': 'error',
