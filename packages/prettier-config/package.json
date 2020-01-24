@@ -17,6 +17,9 @@
   "files": [
     "index.js"
   ],
+  "scripts": {
+    "postversion": "chan release $npm_package_version && git add CHANGELOG.md"
+  },
   "peerDependencies": {
     "prettier": "^1.19.1"
   }

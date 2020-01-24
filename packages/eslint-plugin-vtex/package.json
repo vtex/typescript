@@ -12,7 +12,8 @@
     "Christian Kaisermann <christian.andrade@vtex.com.br>"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "postversion": "chan release $npm_package_version && git add CHANGELOG.md"
   },
   "license": "MIT",
   "bugs": {

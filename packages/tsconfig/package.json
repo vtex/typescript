@@ -1,8 +1,14 @@
 {
   "name": "@vtex/tsconfig",
   "version": "0.4.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "tsconfig.json",
   "license": "MIT",
+  "scripts": {
+    "postversion": "chan release $npm_package_version && git add CHANGELOG.md"
+  },
   "peerDependencies": {
     "typescript": "^3.7.5"
   }
