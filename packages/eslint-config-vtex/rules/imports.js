@@ -3,15 +3,25 @@ module.exports = {
   extends: ['plugin:import/typescript'],
   plugins: ['import'],
   rules: {
-    // disallow non-import statements appearing before import statements
+    // Disallow specified import patterns
+    // https://eslint.org/docs/rules/no-restricted-imports
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: ['lodash'],
+        patterns: ['lodash/*'],
+      },
+    ],
+
+    // Disallow non-import statements appearing before import statements
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
     'import/first': 'error',
 
-    // disallow duplicate imports
+    // Disallow duplicate imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     'import/no-duplicates': 'error',
 
-    // ensure native, external and internal imports are separated, above relative imports and that unassigned imports are ignored
+    // Ensure native, external and internal imports are separated, above relative imports and that unassigned imports are ignored
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
     'import/order': [
       'error',
@@ -38,7 +48,7 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md
     'import/no-mutable-exports': 'error',
 
-    // disallow invalid exports, e.g. multiple defaults
+    // Disallow invalid exports, e.g. multiple defaults
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md
     'import/export': 'error',
 
