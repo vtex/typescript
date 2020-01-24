@@ -6,7 +6,7 @@ module.exports = {
     './rules/node.js',
     './rules/style.js',
     './rules/variables.js',
-    './rules/good-practices.js',
+    './rules/best-practices.js',
     './rules/imports.js',
     './rules/typescript.js',
     './rules/prettier.js',
