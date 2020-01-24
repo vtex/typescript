@@ -112,6 +112,10 @@ module.exports = {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
         '@typescript-eslint/no-implied-eval': 'error',
 
+        // Requires Array#sort calls to always provide a compareFunction
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-array-sort-compare.md
+        '@typescript-eslint/require-array-sort-compare': 'error',
+
         //! extensions of native eslint rules
         //! when modifying a rule here, make sure to modify the native one and vice-versa
 
