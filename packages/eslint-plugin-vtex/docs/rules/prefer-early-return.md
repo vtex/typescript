@@ -1,6 +1,6 @@
-# Prefer early returns over full-body conditional wrapping in function declarations. (prefer-early-return)
+# Prefer early returns over nesting in function declarations. (prefer-early-return)
 
-A function whose entire body is nested under a conditional statement adds unnecessary nesting and makes the code harder to read. An early return often makes the block more readable.
+A function whose last statement is a conditional statement adds unnecessary nesting and makes the code harder to read. An early return often makes the block more readable.
 
 ## Rule Details
 
@@ -44,31 +44,35 @@ function baz() {
     d()
   }
 }
-```
 
-### Options
-
-This plugin takes one option: an object with a integer `maximumStatements` property. This property specifies the maximum number of statements in the conditional for which a full-function body conditional should be allowed. By default, this value is `1`, so the following will **not** be considered a warning:
-
-```js
-function foo() {
-  if (a) {
-    b()
+function qux() {
+  a()
+  if (b) {
+    c()
   }
 }
 ```
 
-Setting `maximumStatements` to `0` will cause the above to be a warning. Setting `maximumStatements` to `2` would cause the following **not** to be considered a warning:
+### Options
+
+This plugin takes an option object:
+
+```ts
+interface Options {
+  maxStatements: number // default: 1
+}
+```
+
+- `maxStatements`: specifies the maximum number of statements allowed in the conditional block. The following will **not** be considered a warning:
 
 ```js
 function foo() {
   if (a) {
     b()
-    c()
   }
 }
 ```
 
 ## When Not To Use It
 
-If you don't care about conditionals that span the entire body of functions, or dislike early returns, you can safely disable this rule.
+If you don't care about nesting and readability, or dislike early returns, you can safely disable this rule.
