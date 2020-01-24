@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.3] - 2020-01-24
+### Fixed
+- Changelog on deploy workflow again.
+
 ## [6.0.2] - 2020-01-24
 ### Fixed
 - Changelog on deploy workflow.
@@ -43,6 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add support for typescript by extending `eslint-config-vtex` v10.
 - Add more rules for a11y in components.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v6.0.2...HEAD
+[Unreleased]: https://github.com/vtex/js-standards/compare/v6.0.3...HEAD
+[6.0.3]: https://github.com/vtex/js-standards/compare/v6.0.2...v6.0.3
 [6.0.2]: https://github.com/vtex/js-standards/compare/v6.0.1...v6.0.2
 [6.0.1]: https://github.com/vtex/js-standards/compare/v6.0.0...v6.0.1

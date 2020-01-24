@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [12.0.3] - 2020-01-24
+### Fixed
+- Changelog on deploy workflow again.
+
 ## [12.0.2] - 2020-01-24
 ### Fixed
 - Changelog on deploy workflow.
@@ -69,6 +73,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v12.0.2...HEAD
+[Unreleased]: https://github.com/vtex/js-standards/compare/v12.0.3...HEAD
+[12.0.3]: https://github.com/vtex/js-standards/compare/v12.0.2...v12.0.3
 [12.0.2]: https://github.com/vtex/js-standards/compare/v12.0.1...v12.0.2
 [12.0.1]: https://github.com/vtex/js-standards/compare/v12.0.0...v12.0.1

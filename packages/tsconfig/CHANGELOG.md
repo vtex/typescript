@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.3] - 2020-01-24
+### Fixed
+- Changelog on deploy workflow again.
+
 ## [0.4.2] - 2020-01-24
 ### Fixed
 - Changelog on deploy workflow.
@@ -30,5 +34,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Base config in `index.js`.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v0.4.2...HEAD
+[Unreleased]: https://github.com/vtex/js-standards/compare/v0.4.3...HEAD
+[0.4.3]: https://github.com/vtex/js-standards/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/vtex/js-standards/compare/v0.4.0...v0.4.2
