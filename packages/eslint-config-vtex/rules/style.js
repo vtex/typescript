@@ -133,12 +133,32 @@ module.exports = {
 
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
-    // TODO https://github.com/vtex/front-end-standards/issues/32
     'padding-line-between-statements': [
-      'off',
+      'error',
       // empty lines after declarations
-      { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
-      { blankLine: 'always', prev: '*', next: 'return' },
+      // { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+      // {
+      //   blankLine: 'any',
+      //   prev: ['const', 'let', 'var'],
+      //   next: ['const', 'let', 'var'],
+      // },
+      // empty lines before returns
+      // { blankLine: 'always', prev: '*', next: 'return' },
+      {
+        blankLine: 'always',
+        prev: ['function', 'class'],
+        next: '*',
+      },
+    ],
+
+    // Require or disallow padding lines between class members
+    // https://eslint.org/docs/rules/lines-between-class-members
+    'lines-between-class-members': [
+      'error',
+      'always',
+      {
+        exceptAfterSingleLine: true,
+      },
     ],
 
     //! Require eslint >= 6.7.0
