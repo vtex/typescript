@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/vtex/javascript#readme",
   "files": [
-    "index.js"
+    "index.js",
+    "rules/"
   ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.17.0",
