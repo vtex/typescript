@@ -9,6 +9,7 @@ docs/                         # standards documentation
 packages/                     # standards related packages
 ├── eslint-config-vtex        # base eslint rule preset
 ├── eslint-config-vtex-react  # eslint rule preset for react projects
+├── eslint-plugin-vtex        # eslint plugin with VTEX custom rules
 ├── prettier-config           # prettier preset of all front-end projects
 └── tsconfig                  # base tsconfig for all typescript projects
 ```
