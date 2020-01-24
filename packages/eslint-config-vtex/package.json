@@ -6,7 +6,7 @@
   "scripts": {
     "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check",
     "dump-config": "eslint --print-config index.js > config-dump.json",
-    "postversion": "chan release $npm_package_version && git add CHANGELOG.md"
+    "postversion": "chan release $npm_package_version && git add CHANGELOG.md && git commit --amend --no-edit"
   },
   "repository": {
     "type": "git",
@@ -37,10 +37,10 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-vtex": "^1.0.1"
+    "eslint-plugin-vtex": "^1.0.0"
   },
   "devDependencies": {
-    "@vtex/prettier-config": "^0.1.1",
+    "@vtex/prettier-config": "^0.1.0",
     "eslint": "^6.8.0",
     "prettier": "^1.18.2",
     "typescript": "^3.7.5"

@@ -6,4 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Fixed
+- Changelog on deploy workflow.
+
+## 1.0.1 - 2020-01-24
+### Fixed
 - Missing files in packages.
+
+[Unreleased]: https://github.com/vtex/js-standards/compare/v1.0.1...HEAD
