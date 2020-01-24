@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [12.0.2] - 2020-01-24
 ### Fixed
 - Changelog on deploy workflow.
 
@@ -67,5 +69,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v12.0.1...HEAD
+[Unreleased]: https://github.com/vtex/js-standards/compare/v12.0.2...HEAD
+[12.0.2]: https://github.com/vtex/js-standards/compare/v12.0.1...v12.0.2
 [12.0.1]: https://github.com/vtex/js-standards/compare/v12.0.0...v12.0.1
