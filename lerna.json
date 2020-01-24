@@ -2,5 +2,16 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "stream": true
+  "stream": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "{.*,*}.{txt,md,yml}",
+        "{.*,*}{.config,rc,ignore}{,.js}",
+        "LICENSE",
+        "lerna.json"
+      ],
+      "message": "chore(release): :robot: publish"
+    }
+  }
 }
