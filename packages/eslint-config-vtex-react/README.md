@@ -12,7 +12,7 @@ yarn add -D eslint-config-vtex-react typescript prettier
 
 ## Usage
 
-After installing the module, just add it to you `extends` array inside your `.eslintrc`.
+After installing the module, just add it to your `extends` array inside your `.eslintrc`.
 
 ```jsonc
 // .eslintrc
