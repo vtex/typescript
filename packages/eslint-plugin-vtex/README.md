@@ -12,7 +12,7 @@ yarn add -D eslint-plugin-vtex
 
 ## Usage
 
-After installing the module, just add it to your `extends` array inside your `.eslintrc`.
+After installing the module, just add it to your `plugins` array inside your `.eslintrc`.
 
 ```jsonc
 // .eslintrc
