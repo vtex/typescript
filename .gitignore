@@ -35,7 +35,6 @@ docs/_book/
 .idea
 npm-debug.log
 .build/
-lib
 dist
 build
 lerna-debug.log
