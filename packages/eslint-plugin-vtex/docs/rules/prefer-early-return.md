@@ -13,6 +13,14 @@ function foo() {
     c()
   }
 }
+
+function qux() {
+  a()
+  if (b) {
+    c()
+    d()
+  }
+}
 ```
 
 The following patterns are not warnings:
@@ -42,13 +50,6 @@ function baz() {
     c()
   } else {
     d()
-  }
-}
-
-function qux() {
-  a()
-  if (b) {
-    c()
   }
 }
 ```
