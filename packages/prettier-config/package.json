@@ -1,6 +1,6 @@
 {
   "name": "@vtex/prettier-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "VTEX shared prettier config",
   "publishConfig": {
     "access": "public"
