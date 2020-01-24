@@ -1,0 +1,38 @@
+{
+  "name": "eslint-plugin-vtex",
+  "version": "1.0.0",
+  "description": "VTEX's ESLint plugin",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "vtex"
+  ],
+  "contributors": [
+    "Christian Kaisermann <christian.andrade@vtex.com.br>"
+  ],
+  "scripts": {
+    "check": "yarn run lint && yarn test",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vtex/javascript/issues"
+  },
+  "homepage": "https://github.com/vtex/javascript",
+  "repository": "https://github.com/vtex/javascript",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/fixtures"
+    ],
+    "collectCoverage": false
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "typescript": "^3.6.4"
+  },
+  "peerDependencies": {
+    "eslint": "^6.0.0"
+  }
+}

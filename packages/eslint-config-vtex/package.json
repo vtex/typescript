@@ -34,7 +34,8 @@
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-prettier": "^3.1.2"
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vtex": "^1.0.0"
   },
   "devDependencies": {
     "@vtex/prettier-config": "^0.0.1",
