@@ -31,7 +31,7 @@ The preset will automatically load Typescript rules when dealing with `.ts` or `
 // tsconfig.eslint.json
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts", "**/*.js"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"],
   "exclude": []
 }
 ```
