@@ -6,7 +6,7 @@ Main repository for VTEX's javascript standards. Issues should be used to start 
 
 ```tree
 docs/                         # standards documentation
-├── Browser\ Support.md       # vtex browser support documentation
+└── Browser\ Support.md       # vtex browser support documentation
 packages/                     # standards related packages
 ├── eslint-config-vtex        # base eslint rule preset
 ├── eslint-config-vtex-react  # eslint rule preset for react projects
