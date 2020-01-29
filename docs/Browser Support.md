@@ -22,6 +22,8 @@ Chrome 77+
 Firefox 70+
 ```
 
+_Note: even though we support older browsers such as IE 11 and Safari 8, the layout may slightly vary due to CSS browser support._
+
 For `admin areas`, the main targets are evergreen browsers, such as Firefox, Chrome, the new Edge, etc:
 
 ```text
