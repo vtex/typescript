@@ -45,7 +45,7 @@ If the functionality is not well supported and yet it's needed for some _importa
 
 > A polyfill is a piece of code used to provide modern functionality on older browsers that do not natively support it.
 
-To be possible to write and use modern Javascript and CSS features while supporting all the way to IE 11, some polyfills are automatically added to every VTEX store:
+To be possible to write and use modern Javascript and CSS features while supporting all the way to IE 11, some polyfills are automatically added **only** to VTEX IO stores:
 
 - [`Array.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 - [`Array.prototype.fill()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
