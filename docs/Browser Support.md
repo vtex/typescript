@@ -34,7 +34,7 @@ Firefox 70+
 
 ## Guidelines
 
-It's usually in a dev's heart the desire to use the newest Javascript feature or a new fancy CSS property, such as `display: grid`, `position: sticky`, `Map()`, `Set()`, etc. However, _browser support_ and _cross-browser compatibility_ are the first concerns that should come to the developer's mind. Make sure to always check `MDN` and `Can I Use` for the current support of the desired functionality.
+It's usually in a dev's heart the desire to use the newest Javascript feature or a new fancy CSS property, such as `display: grid`, `position: sticky`, `Map()`, `Set()`, etc. However, _browser support_ and _cross-browser compatibility_ are the first concerns that have to come to the developer's mind. Make sure to always check `MDN` and `Can I Use` for the current support of the desired functionality.
 
 - [MDN - Mozilla Developer Network](https://developer.mozilla.org/)
 - [Can I Use](https://caniuse.com/)
