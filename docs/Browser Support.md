@@ -14,7 +14,7 @@ VTEX browser support is split in two contexts: `storefront` and `admin areas`.
 For `storefronts`, we strive to support all major browsers all the way to IE 11:
 
 ```text
-# Browserslist example (date 29/01/2020)
+# Browserslist example (date 2020-01-29)
 IE 11
 Edge 17+
 Safari 8+
