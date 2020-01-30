@@ -2,18 +2,19 @@
 
 Main repository for VTEX's javascript standards. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
 
-## Project Structure
+## Content
 
-```tree
-docs/                         # standards documentation
-└── Browser\ Support.md       # VTEX browser support documentation
-packages/                     # standards related packages
-├── eslint-config-vtex        # base eslint rule preset
-├── eslint-config-vtex-react  # eslint rule preset for react projects
-├── eslint-plugin-vtex        # eslint plugin with VTEX custom rules
-├── prettier-config           # prettier preset of all front-end projects
-└── tsconfig                  # base tsconfig for all typescript projects
-```
+##### `docs/`
+
+- [Browser Support](/docs/Browser%20Support.md) - VTEX browser support documentation
+
+##### `packages/`
+
+- [eslint-config-vtex](/packages/eslint-config-vtex) - base eslint rule preset
+- [eslint-config-vtex-react](/packages/eslint-config-vtex-react) - eslint rule preset for react projects
+- [eslint-plugin-vtex](/packages/eslint-plugin-vtex) - eslint plugin with VTEX custom rules
+- [prettier-config](/packages/prettier-config) - prettier preset of all front-end projects
+- [tsconfig](/packages/tsconfig) - base tsconfig for all typescript projects
 
 ## Contributing
 
