@@ -27,7 +27,7 @@ _Note: even though we support older browsers such as IE 11 and Safari 8, the lay
 For `admin areas`, the main targets are evergreen browsers, such as Firefox, Chrome, the new Edge, etc:
 
 ```text
-# Browserslist example (date 29/01/2020)
+# Browserslist example (date 2020-01-29)
 Edge 17+
 Safari 12.1
 Chrome 77+
