@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [12.0.4] - 2020-02-03
+### Added
+- Add warning message for lodash and @testing-library imports.
+
 ## [12.0.3] - 2020-01-24
 ### Fixed
 - Changelog on deploy workflow again.
@@ -51,7 +55,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 10.0.1 - 2019-03-15
 ### Changed
-- Disabled rule 
+- Disabled rule
   - The current version of the parser doesn't have support for type analysis, so this rule will
     complain for all functions, and not only the ones that doesn't have a type signature or aren't
     inferable.
@@ -73,7 +77,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v12.0.3...HEAD
+[Unreleased]: https://github.com/vtex/js-standards/compare/v12.0.4...HEAD
+[12.0.4]: https://github.com/vtex/js-standards/compare/v12.0.3...v12.0.4
 [12.0.3]: https://github.com/vtex/js-standards/compare/v12.0.2...v12.0.3
 [12.0.2]: https://github.com/vtex/js-standards/compare/v12.0.1...v12.0.2
 [12.0.1]: https://github.com/vtex/js-standards/compare/v12.0.0...v12.0.1

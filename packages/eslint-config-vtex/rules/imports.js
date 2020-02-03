@@ -8,7 +8,18 @@ module.exports = {
     'no-restricted-imports': [
       'error',
       {
-        paths: ['lodash'],
+        paths: [
+          {
+            name: 'lodash',
+            message: "Please use 'ramda' instead",
+          },
+          {
+            name: '@testing-library/react',
+            message: "Please use '@vtex/test-tools/react' instead",
+          },
+        ],
+        // Patterns don't support messages yet :(
+        // https://github.com/eslint/eslint/issues/11843
         patterns: ['lodash/*'],
       },
     ],
