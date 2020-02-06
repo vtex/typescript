@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [12.0.5] - 2020-02-06
+### Fixed
+- Prevent eslint trying to load tsconfig from node_modules.
+
 ## [12.0.4] - 2020-02-03
 ### Added
 - Add warning message for lodash and @testing-library imports.
@@ -77,7 +81,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v12.0.4...HEAD
+[Unreleased]: https://github.com/vtex/javascript/compare/v12.0.5...HEAD
+[12.0.5]: https://github.com/vtex/javascript/compare/v12.0.4...v12.0.5
 [12.0.4]: https://github.com/vtex/js-standards/compare/v12.0.3...v12.0.4
 [12.0.3]: https://github.com/vtex/js-standards/compare/v12.0.2...v12.0.3
 [12.0.2]: https://github.com/vtex/js-standards/compare/v12.0.1...v12.0.2

@@ -13,9 +13,13 @@ module.exports = {
         ecmaVersion: 2019,
         sourceType: 'module',
         project: [
-          './tsconfig{.eslint.json,.json}',
-          '*/tsconfig{.eslint.json,.json}',
-          '*/*/tsconfig{.eslint.json,.json}',
+          // look in the root
+          'tsconfig{.eslint.json,.json}',
+          // look in dirs like node/react
+          // TODO: can these negations be smarter?
+          '!(node_modules)*/tsconfig{.eslint.json,.json}',
+          // look in dirs like packages/package/*
+          '!(node_modules)*/!(node_modules)*/tsconfig{.eslint.json,.json}',
         ],
       },
       rules: {
