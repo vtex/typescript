@@ -10,6 +10,7 @@ module.exports = {
     './rules/imports.js',
     './rules/typescript.js',
     './rules/prettier.js',
+    './rules/tests.js',
   ],
   plugins: ['vtex'],
   parserOptions: {
