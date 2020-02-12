@@ -23,9 +23,9 @@ module.exports = {
         // Enforce consistent a test method name
         // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/consistent-test-it.md
         'jest/consistent-test-it': [
-          'off',
+          'warn',
           {
-            fn: 'it',
+            fn: 'test',
             withinDescribe: 'it',
           },
         ],
