@@ -8,7 +8,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detect',
+      version: 'latest',
     },
     linkComponents: [{ name: 'Link', linkAttribute: 'to' }],
   },
