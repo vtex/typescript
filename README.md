@@ -6,6 +6,7 @@ Main repository for VTEX's javascript standards. Issues should be used to start 
 
 ##### `docs/`
 
+- [Style Guide](/docs/Style%20Guide.md) - VTEX Javascript style guide
 - [Browser Support](/docs/Browser%20Support.md) - VTEX browser support documentation
 
 ##### `packages/`
