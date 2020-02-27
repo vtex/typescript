@@ -1,6 +1,3 @@
 {
-  "extends": "vtex",
-  "env": {
-    "jest": true
-  }
+  "extends": "vtex"
 }

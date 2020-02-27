@@ -1,11 +1,11 @@
-# VTEX Javascript Style Guide
+# VTEX Typescript Style Guide
 
 [![Downloads](https://img.shields.io/npm/dm/eslint-config-vtex.svg)](https://www.npmjs.com/package/eslint-config-vtex)
 [![Downloads](https://img.shields.io/npm/dm/eslint-config-vtex-react.svg)](https://www.npmjs.com/package/eslint-config-vtex-react)
 
-As projects get bigger and more people start collaborating, it gets harder to maintain them and implement new functionalities. By defining a standard way to write Javascript applications, we can not only automate the formatting and static analysis steps, but also speed up the whole workflow by reducing the time a developer needs to focus on other tasks. A developer's job should be to focus on solving their problem in hand, not to fix the indentation level or inserting a line break.
+As projects get bigger and more people start collaborating, it gets harder to maintain them and implement new functionalities. By defining a standard way to write Typescript applications, we can not only automate the formatting and static analysis steps, but also speed up the whole workflow by reducing the time a developer needs to focus on other tasks. A developer's job should be to focus on solving their problem in hand, not to fix the indentation level or inserting a line break.
 
-This style guide aims to make every Javascript related code written by any VTEX developer seems to have been written by a single person. With this in mind, feature implementations, mantainances and even reviews can be sped up, as everyone will be looking to code similar to theirs, while keeping a essential minimal code quality.
+This style guide aims to make every Typescript related code written by any VTEX developer seems to have been written by a single person. With this in mind, feature implementations, mantainances and even reviews can be sped up, as everyone will be looking to code similar to theirs, while keeping a essential minimal code quality.
 
 **This style guide doesn't include formatting rules since it's expected that prettier is configured to use the `@vtex/prettier-config` preset.**
 

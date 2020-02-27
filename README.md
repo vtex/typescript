@@ -1,12 +1,12 @@
-# Javascript Standards
+# Typescript Standards
 
-Main repository for VTEX's javascript standards. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
+Main repository for VTEX's Typescript standards. Issues should be used to start discussions about standards and patterns. PRs are welcome after being rightfully discussed.
 
 ## Content
 
 ##### `docs/`
 
-- [Style Guide](/docs/Style%20Guide.md) - VTEX Javascript style guide
+- [Style Guide](/docs/Style%20Guide.md) - VTEX Javascript/Typescript style guide
 - [Getting Started](/docs/Getting%20Started.md) - Getting starting guide to configure and automate our tooling process
 - [Browser Support](/docs/Browser%20Support.md) - VTEX browser support documentation
 
