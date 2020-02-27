@@ -51,10 +51,10 @@ Then create their configuration files at the root of your project:
 `.prettierc`:
 
 ```jsonc
-"@vtex/prettier-config
+"@vtex/prettier-config"
 ```
 
-_Note: yes, it's a string literal in a JSON file._
+> _Note: yes, it's a string literal in a JSON file._
 
 #### 1.1 - For `react` projects
 
@@ -144,7 +144,7 @@ Then, add these configuration objects to your project's **root** `package.json`:
 
 Now, everytime someone is `git commit`ing, `lint-staged` will guarantee that every staged file is following VTEX's standards.
 
-_Note: if for some reason you need to commit files that doesn't follow the standards, you can pass the [`--no-verify`](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---no-verify) flag to the `git commit` command. We trust you know what you're doing._
+> _Note: if for some reason you need to commit files that doesn't follow the standards, you can pass the [`--no-verify`](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---no-verify) flag to the `git commit` command. We trust you know what you're doing._
 
 ## CI Automation
 
