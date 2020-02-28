@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.2.0] - 2020-02-28
+### Added
+- Add IO and Native presets
+
 ## [6.1.1] - 2020-02-14
 ### Fixed
 - Use explicitly latest react version
@@ -51,7 +55,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add support for typescript by extending `eslint-config-vtex` v10.
 - Add more rules for a11y in components.
 
-[Unreleased]: https://github.com/vtex/javascript/compare/v6.1.1...HEAD
+[Unreleased]: https://github.com/vtex/javascript/compare/v6.2.0...HEAD
+[6.2.0]: https://github.com/vtex/javascript/compare/v6.1.1...v6.2.0
 [6.1.1]: https://github.com/vtex/javascript/compare/v6.0.3...v6.1.1
 [6.0.3]: https://github.com/vtex/js-standards/compare/v6.0.2...v6.0.3
 [6.0.2]: https://github.com/vtex/js-standards/compare/v6.0.1...v6.0.2
