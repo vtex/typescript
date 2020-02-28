@@ -249,7 +249,6 @@ module.exports = {
 
     // Prefer destructuring from arrays and objects
     // https://eslint.org/docs/rules/prefer-destructuring
-    // TODO https://github.com/vtex/front-end-standards/issues/33
     'prefer-destructuring': [
       'warn',
       {
