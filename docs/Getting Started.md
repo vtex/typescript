@@ -68,6 +68,13 @@ Then use the preset in your project's `.eslintrc`:
 { "extends": "vtex-react" }
 ```
 
+We also provide two other presets:
+
+- `vtex-react/io` - Specific for VTEX IO React apps.
+- `vtex-react/native` - Specific for `react-native` apps.
+
+Make sure to use the appropriate preset for your context.
+
 #### 1.2 - For `Typescript` projects
 
 ```bash
