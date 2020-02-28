@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [12.2.1] - 2020-02-28
+### Fixed
+- Add sub presets to package bundle
+
 ## [12.2.0] - 2020-02-28
 ### Removed
 - Import block of `lodash` and `testing-library`
@@ -89,7 +93,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/javascript/compare/v12.2.0...HEAD
+[Unreleased]: https://github.com/vtex/javascript/compare/v12.2.1...HEAD
+[12.2.1]: https://github.com/vtex/javascript/compare/v12.2.0...v12.2.1
 [12.2.0]: https://github.com/vtex/javascript/compare/v12.1.0...v12.2.0
 [12.1.0]: https://github.com/vtex/javascript/compare/v12.0.5...v12.1.0
 [12.0.5]: https://github.com/vtex/javascript/compare/v12.0.4...v12.0.5
