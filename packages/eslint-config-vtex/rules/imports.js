@@ -3,27 +3,6 @@ module.exports = {
   extends: ['plugin:import/typescript'],
   plugins: ['import'],
   rules: {
-    // Disallow specified import patterns
-    // https://eslint.org/docs/rules/no-restricted-imports
-    'no-restricted-imports': [
-      'error',
-      {
-        paths: [
-          {
-            name: 'lodash',
-            message: "Please use 'ramda' instead",
-          },
-          {
-            name: '@testing-library/react',
-            message: "Please use '@vtex/test-tools/react' instead",
-          },
-        ],
-        // Patterns don't support messages yet :(
-        // https://github.com/eslint/eslint/issues/11843
-        patterns: ['lodash/*'],
-      },
-    ],
-
     // Disallow non-import statements appearing before import statements
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
     'import/first': 'error',
