@@ -2,6 +2,12 @@
 
 This package provides VTEX's `.eslintrc` for React projects as an extensible shared config.
 
+Not all React applications live in the same context, different rules are needed for different scenarios. To solve this, three presets are provided:
+
+- `vtex-react` - Base react configuration. Can be used in any React project.
+- `vtex-react/io` - To be used in VTEX IO React applications.
+- `vtex-react/native` - To be used in `react-native` applications.
+
 ## Installation
 
 Assuming you already have ESLint installed, run:
