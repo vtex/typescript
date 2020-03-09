@@ -54,10 +54,7 @@ module.exports = {
 
         // Enforce a consitent way to type objects
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
-        '@typescript-eslint/consistent-type-definitions': [
-          'error',
-          'interface',
-        ],
+        '@typescript-eslint/consistent-type-definitions': 'off',
 
         // Disallow non null assertions (!), comes from the recommended config
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
