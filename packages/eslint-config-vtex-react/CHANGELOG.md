@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 6.3.0 - 2020-03-11
+### Added
+- Add `browser` env.
+
 ## [6.2.1] - 2020-02-28
 ### Fixed
 - Add sub presets to package bundle
