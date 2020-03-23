@@ -1,6 +1,6 @@
 ---
 name: Discussion
-about: General questions about best practices and patterns
+about: Questions and discussions about best practices and patterns
 ---
 
 **What is to be discussed?**
