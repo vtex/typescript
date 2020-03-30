@@ -266,6 +266,12 @@ module.exports = {
 
     // ensure <a> tags are valid
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/0745af376cdc8686d85a361ce36952b1fb1ccf6e/docs/rules/anchor-is-valid.md
-    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'] }],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['to', `page`],
+      },
+    ],
   },
 }

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 6.2.2 - 2020-03-30
+### Fixed
+- Allow to use ramda/lodash and node libraries in a testing context.
+
 ## [6.2.1] - 2020-02-28
 ### Fixed
 - Add sub presets to package bundle
