@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [12.3.2] - 2020-04-01
+### Changed
+- Disable some import rules inside TypeScript declaration files.
+
 ## 12.3.1 - 2020-03-30
 ### Fixed
 - Release cycle.
@@ -101,7 +105,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/javascript/compare/v12.2.1...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v12.3.2...HEAD
+[12.3.2]: https://github.com/vtex/typescript/compare/v12.3.1...v12.3.2
 [12.2.1]: https://github.com/vtex/javascript/compare/v12.2.0...v12.2.1
 [12.2.0]: https://github.com/vtex/javascript/compare/v12.1.0...v12.2.0
 [12.1.0]: https://github.com/vtex/javascript/compare/v12.0.5...v12.1.0

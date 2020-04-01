@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vtex",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "VTEX's ESLint plugin",
   "main": "index.js",
   "files": [
@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "version": "chan release $npm_package_version && git add CHANGELOG.md && git commit --amend --no-edit"
+    "version": "chan release $npm_package_version && git add CHANGELOG.md"
   },
   "jest": {
     "testPathIgnorePatterns": [
