@@ -6,7 +6,7 @@
   "scripts": {
     "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check",
     "dump-config": "eslint --print-config index.js > config-dump.json",
-    "version": "chan release $npm_package_version && git add CHANGELOG.md && git commit --amend --no-edit"
+    "version": "chan release $npm_package_version && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
