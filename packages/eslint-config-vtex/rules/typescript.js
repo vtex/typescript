@@ -194,5 +194,13 @@ module.exports = {
         ],
       },
     },
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'import/order': 'off',
+        'import/no-duplicates': 'off',
+        'import/export': 'off',
+      },
+    },
   ],
 }
