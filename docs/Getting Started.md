@@ -48,7 +48,7 @@ Then create their configuration files at the root of your project:
 { "extends": "vtex" }
 ```
 
-`.prettierc`:
+`.prettierrc`:
 
 ```jsonc
 "@vtex/prettier-config"
