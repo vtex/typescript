@@ -34,5 +34,5 @@ module.exports = {
   jsxBracketSameLine: false,
 
   // Include parentheses around a sole arrow function parameter.
-  arrowParens: 'avoid',
+  arrowParens: 'always',
 }
