@@ -17,6 +17,9 @@ module.exports = {
     ecmaVersion: 2019,
     sourceType: 'module',
   },
+  env: {
+    es6: true,
+  },
   globals: {
     __DEV__: true,
   },
