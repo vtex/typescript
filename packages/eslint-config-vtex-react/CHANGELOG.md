@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+-  `prettier` `v2.0` as acceptable dependency.
+
 ## 6.3.1 - 2020-03-30
 ### Fixed
 - Release cycle.
