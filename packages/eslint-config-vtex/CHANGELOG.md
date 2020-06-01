@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 12.5.0 - 2020-06-01
+### Added
+- `prettier` `v2.0` as acceptable dependency.
+
 ## [12.3.2] - 2020-04-01
 ### Changed
 - Disable some import rules inside TypeScript declaration files.

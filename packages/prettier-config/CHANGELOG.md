@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 0.3.0 - 2020-06-01
+### Added
+- `prettier` `v2.0` as acceptable dependency.
+
 ## 0.2.0 - 2020-04-28
 ### Changed
 - Make prettier always add paranthesis to arrow fn args
