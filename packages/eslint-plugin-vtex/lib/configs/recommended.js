@@ -4,7 +4,7 @@ module.exports = {
     'vtex/prefer-early-return': [
       'warn',
       {
-        maxStatements: 1,
+        maxStatements: 2,
       },
     ],
   },
