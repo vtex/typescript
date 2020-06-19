@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - `env.es6: true` to base eslint config.
 
+### Fixed
+- Make `Cypress` global available in every file inside the `cypress` directory.
+
 ## 12.5.0 - 2020-06-01
 ### Added
 - `prettier` `v2.0` as acceptable dependency.

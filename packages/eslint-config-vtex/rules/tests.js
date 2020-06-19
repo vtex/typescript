@@ -4,7 +4,7 @@ module.exports = {
   overrides: [
     // ! CYPRESS
     {
-      files: ['**/cypress/**/*{.test,.spec,_spec}.{ts,tsx,js,jsx}'],
+      files: ['**/cypress/**/*.{ts,tsx,js,jsx}'],
       extends: ['plugin:cypress/recommended'],
       rules: {
         // Enforce assertions before taking a screenshot
