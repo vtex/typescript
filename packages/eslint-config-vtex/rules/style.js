@@ -134,19 +134,41 @@ module.exports = {
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
     'padding-line-between-statements': [
-      'error',
+      'warn',
       // empty lines after declarations
-      // { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
-      // {
-      //   blankLine: 'any',
-      //   prev: ['const', 'let', 'var'],
-      //   next: ['const', 'let', 'var'],
-      // },
-      // empty lines before returns
-      // { blankLine: 'always', prev: '*', next: 'return' },
       {
         blankLine: 'always',
-        prev: ['function', 'class'],
+        prev: ['const', 'let', 'var'],
+        next: '*',
+      },
+      // allow to have none or one blank line between declarations
+      {
+        blankLine: 'any',
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var'],
+      },
+      // enforce blank lines after multiline declarations
+      {
+        blankLine: 'always',
+        prev: ['multiline-const', 'multiline-let', 'multiline-var'],
+        next: '*',
+      },
+      // empty lines before returns
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: 'return',
+      },
+      // empty lines between switch cases and breaks
+      {
+        blankLine: 'always',
+        prev: ['case', 'break'],
+        next: ['case', 'break'],
+      },
+      // always require blankline after function, class declarations and multiline blocks (if, try-catch, etc)
+      {
+        blankLine: 'always',
+        prev: ['function', 'class', 'multiline-block-like'],
         next: '*',
       },
     ],
