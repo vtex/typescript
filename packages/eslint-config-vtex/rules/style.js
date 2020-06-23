@@ -163,7 +163,7 @@ module.exports = {
       {
         blankLine: 'always',
         prev: ['case', 'break'],
-        next: ['case', 'break'],
+        next: ['case', 'break', 'default'],
       },
       // always require blankline after function, class declarations and multiline blocks (if, try-catch, etc)
       {
