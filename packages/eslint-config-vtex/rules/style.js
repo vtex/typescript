@@ -98,7 +98,7 @@ module.exports = {
       {
         selector: 'TSEnumDeclaration',
         message:
-          "Literal types and enums in Typescript solve the same problem in many cases and the enum has some trade-offs that in most cases literal types don't. See https://github.com/vtex/typescript/issues/60 for more information.",
+          "Literal types and enums, in many cases, solve the same problem while enum has some trade-offs that usually literal types don't. Consider using a literal type instead. See https://github.com/vtex/typescript/issues/60 for more information.",
       },
     ],
 
