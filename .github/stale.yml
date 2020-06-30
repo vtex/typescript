@@ -14,6 +14,7 @@ onlyLabels: []
 exemptLabels:
   - todo
   - documentation
+  - fresh
 
 # Set to true to ignore issues in a project (defaults to false)
 exemptProjects: false
@@ -31,6 +32,8 @@ staleLabel: stale
 markComment: >
   This issue has been automatically marked as stale because it has not had
   recent activity. It will be closed if no further activity occurs.
+
+  You can add the `fresh` label to prevent me from taking any action.
 
   If this is a discussion thread, the most voted option will be final. Thank you for your contributions.
 
