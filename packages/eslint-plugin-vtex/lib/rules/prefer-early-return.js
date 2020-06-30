@@ -34,6 +34,7 @@ function create(context) {
     ...DEFAULT_OPTIONS,
     ...(context.options[0] || null),
   }
+
   const { maxStatements } = options
 
   function isOffendingConsequent(consequentNode) {
@@ -52,11 +53,13 @@ function create(context) {
 
   function checkFunctionBody(fnNode) {
     const bodyNode = fnNode.body
+
     if (bodyNode.type !== 'BlockStatement' || bodyNode.body.length === 0) {
       return
     }
 
     const lastNode = bodyNode.body[bodyNode.body.length - 1]
+
     if (!isOffendingIfStatement(lastNode)) {
       return
     }

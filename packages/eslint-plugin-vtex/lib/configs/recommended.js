@@ -7,5 +7,6 @@ module.exports = {
         maxStatements: 2,
       },
     ],
+    'vtex/enforce-explicit-enum-values': 'error',
   },
 }
