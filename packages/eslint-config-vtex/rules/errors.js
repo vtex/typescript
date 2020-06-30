@@ -15,7 +15,7 @@ module.exports = {
 
     // Disallow use of console
     // https://eslint.org/docs/rules/no-console
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
 
     // Disallow template literal placeholder syntax in regular strings
     // https://eslint.org/docs/rules/no-template-curly-in-string
