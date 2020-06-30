@@ -94,6 +94,12 @@ module.exports = {
         message:
           '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
+      // ban all enums
+      {
+        selector: 'TSEnumDeclaration',
+        message:
+          "Literal types and enums in Typescript solve the same problem in many cases and the enum has some trade-offs that in most cases literal types don't. See https://github.com/vtex/typescript/issues/60 for more information.",
+      },
     ],
 
     // Disallow the use of Boolean literals in conditional expressions
