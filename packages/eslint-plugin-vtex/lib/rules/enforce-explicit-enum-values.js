@@ -5,7 +5,7 @@ const meta = {
     description: 'Enforce the usage of explicit values for enum entries.',
     category: 'Best Practices',
     recommended: 'error',
-    uri: getDocUrl('typescript/enforce-explict-enum-values'),
+    uri: getDocUrl('enforce-explict-enum-values'),
   },
 }
 
