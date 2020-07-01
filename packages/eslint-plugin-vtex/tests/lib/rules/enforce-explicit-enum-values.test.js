@@ -6,7 +6,7 @@ const ruleTester = new ESLintUtils.RuleTester({
   parser: '@typescript-eslint/parser',
 })
 
-ruleTester.run('prefer-early-return', rule, {
+ruleTester.run('enforce-explicit-enum-values', rule, {
   valid: [
     {
       code: `const enum Status {
