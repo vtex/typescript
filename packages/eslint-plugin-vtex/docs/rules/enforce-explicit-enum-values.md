@@ -6,7 +6,7 @@
 
 The following patterns are considered errors:
 
-```js
+```ts
 const enum Status {
   Open,
   Closed,
@@ -17,7 +17,7 @@ If someone adds a new `Status` value to the top, both `Open` and `Closed` would 
 
 The following patterns are not warnings:
 
-```js
+```ts
 const enum Status {
   Open = 0,
   Closed = 1,
