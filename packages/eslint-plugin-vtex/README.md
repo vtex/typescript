@@ -27,4 +27,4 @@ After installing the module, just add it to your `plugins` array inside your `.e
 This plugin provides the following custom ESLint rules:
 
 - [`prefer-early-return`](/packages/eslint-plugin-vtex/docs/rules/prefer-early-return.md): Suggest early returning to prevent nesting and improve code readability.
-- [`enforce-explicit-enum-values`](/packages/eslint-plugin-vtex/docs/rules/enforce-explicit-enum-values.md): Enforce explicit enum values.
+- [`prefer-enum-initializers`](/packages/eslint-plugin-vtex/docs/rules/prefer-enum-initializers.md): Enforce explicit enum values.

@@ -1,12 +1,12 @@
 const { ESLintUtils } = require('@typescript-eslint/experimental-utils')
 
-const rule = require('../../../lib/rules/enforce-explicit-enum-values.js')
+const rule = require('../../../lib/rules/prefer-enum-initializers.js')
 
 const ruleTester = new ESLintUtils.RuleTester({
   parser: '@typescript-eslint/parser',
 })
 
-ruleTester.run('enforce-explicit-enum-values', rule, {
+ruleTester.run('prefer-enum-initializers', rule, {
   valid: [
     {
       code: `const enum Status {
@@ -26,12 +26,10 @@ ruleTester.run('enforce-explicit-enum-values', rule, {
       `,
       errors: [
         {
-          message:
-            'The value of the constant "Open" should be explicitly defined.',
+          message: 'Prefer defining a initializer for "Open".',
         },
         {
-          message:
-            'The value of the constant "Close" should be explicitly defined.',
+          message: 'Prefer defining a initializer for "Close".',
         },
       ],
     },

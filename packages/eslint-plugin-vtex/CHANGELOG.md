@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.2.0 - 2020-07-01
 ### Added
-- Add `vtex/enforce-explicit-enum-values` rule.
+- Add `vtex/prefer-enum-initializers` rule.
 
 ## 1.1.1 - 2020-06-19
 ### Changed

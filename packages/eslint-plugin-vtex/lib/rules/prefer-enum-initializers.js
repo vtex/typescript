@@ -2,10 +2,10 @@ const { getDocUrl } = require('../includes/getDocUrl.js')
 
 const meta = {
   docs: {
-    description: 'Enforce the usage of explicit values for enum entries.',
+    description: 'Prefer enum values with initializers',
     category: 'Best Practices',
     recommended: 'error',
-    uri: getDocUrl('enforce-explict-enum-values'),
+    uri: getDocUrl('prefer-enum-'),
   },
 }
 
@@ -20,7 +20,7 @@ function create(context) {
 
       context.report({
         node: member,
-        message: `The value of the constant "${member.id.name}" should be explicitly defined.`,
+        message: `Prefer defining a initializer for "${member.id.name}".`,
       })
     }
   }
