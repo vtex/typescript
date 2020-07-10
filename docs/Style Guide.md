@@ -382,8 +382,8 @@ Eslint rule: [`quote-props`](https://eslint.org/docs/rules/quote-props.html)
 ```js
 // bad
 const bad = {
-  foo: 3,
-  bar: 4,
+  'foo': 3,
+  'bar': 4,
   'data-blah': 5,
 }
 
