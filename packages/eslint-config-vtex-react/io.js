@@ -15,12 +15,12 @@ module.exports = {
               {
                 name: 'lodash',
                 message:
-                  'Lodash is a heavy library. Import only the methods you need or use native ones instead',
+                  'You might not need lodash, try using the default functions from the browser',
               },
               {
                 name: 'ramda',
                 message:
-                  'Ramda is a heavy library. Import only the methods you need or use native ones instead',
+                  'You might not need ramda, try using the default functions from the browser',
               },
             ],
             // Patterns don't support messages yet :(
