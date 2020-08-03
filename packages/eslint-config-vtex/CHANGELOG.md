@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## 12.8.0 - 2020-08-03
 ### Added
 - [`no-fallthrough`] Add comments in the format of `break .* omitted` or `fallsthrough` to allow falling through a switch case.
 - [`naming-convention`] Use the new `naming-convention` rule to enforce a consistent symbol naming experience.
