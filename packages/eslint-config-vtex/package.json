@@ -31,8 +31,8 @@
     "rules/"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-cypress": "^2.9.0",
