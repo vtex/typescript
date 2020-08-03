@@ -185,12 +185,24 @@ module.exports = {
             trailingUnderscore: 'allow',
           },
           {
+            selector: 'function',
+            format: ['camelCase', 'PascalCase'],
+          },
+          {
             selector: 'typeLike',
             format: ['PascalCase'],
           },
           {
-            selector: 'enumMember',
-            format: ['PascalCase', 'UPPER_CASE'],
+            selector: [
+              'property',
+              'parameterProperty',
+              'enumMember',
+              // have to leave this for now as this rule
+              // doesn't separate regular parameters from
+              // destructured parameters
+              'parameter',
+            ],
+            format: null,
           },
         ],
 
@@ -207,9 +219,19 @@ module.exports = {
             typedefs: false,
           },
         ],
+
         // Enforce explicit enum item values
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
         '@typescript-eslint/prefer-enum-initializers': 'warn',
+
+        // Explicitly defines what a module scoped method returns
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+
+        // Disallow harmful bultin types
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
+        //! Commented because we use the recommended version of this rule
+        // '@typescript-eslint/ban-types': 'off',
       },
     },
     {

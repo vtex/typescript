@@ -17,7 +17,7 @@ module.exports = {
     'no-fallthrough': [
       'error',
       {
-        commentPattern: '(break[\\s\\w]*omitted|fallsthrough)',
+        commentPattern: '(break[\\s\\w]*omitted|falls\\s?through)',
       },
     ],
 
