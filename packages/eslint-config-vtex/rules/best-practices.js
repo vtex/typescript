@@ -12,6 +12,15 @@ module.exports = {
     // https://eslint.org/docs/rules/default-case
     'default-case': ['error', { commentPattern: '^no default$' }],
 
+    // Disallow case statement fallthrough
+    // https://eslint.org/docs/rules/no-fallthrough
+    'no-fallthrough': [
+      'error',
+      {
+        commentPattern: '(break[\\s\\w]*omitted|fallsthrough)',
+      },
+    ],
+
     // Enforce parameters with default values to be last
     // https://eslint.org/docs/rules/default-param-last
     'default-param-last': 'error',
