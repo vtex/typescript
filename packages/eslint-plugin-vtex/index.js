@@ -5,6 +5,5 @@ module.exports = {
   },
   rules: {
     'prefer-early-return': require('./lib/rules/prefer-early-return'),
-    'enforce-explicit-enum-values': require('./lib/rules/enforce-explicit-enum-values'),
   },
 }
