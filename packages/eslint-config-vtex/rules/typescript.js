@@ -167,15 +167,30 @@ module.exports = {
           },
         ],
 
-        // Require camel case names
-        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/camelcase.md
+        // Require a consistent naming convention
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
         camelcase: 'off',
-        '@typescript-eslint/camelcase': [
+        '@typescript-eslint/naming-convention': [
           'error',
           {
-            properties: 'never',
-            genericType: 'always',
-            ignoreDestructuring: false,
+            selector: 'default',
+            format: ['camelCase'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+          {
+            selector: 'variable',
+            format: ['camelCase', 'UPPER_CASE'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+          {
+            selector: 'typeLike',
+            format: ['PascalCase'],
+          },
+          {
+            selector: 'enumMember',
+            format: ['PascalCase', 'UPPER_CASE'],
           },
         ],
 
@@ -192,6 +207,9 @@ module.exports = {
             typedefs: false,
           },
         ],
+        // Enforce explicit enum item values
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
+        '@typescript-eslint/prefer-enum-initializers': 'warn',
       },
     },
     {

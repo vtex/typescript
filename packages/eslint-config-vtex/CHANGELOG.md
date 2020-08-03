@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - [`no-fallthrough`] Add comments in the format of `break .* omitted` or `fallsthrough` to allow falling through a switch case.
+- [`naming-convention`] Use the new `naming-convention` rule to enforce a consistent symbol naming experience.
+
+### Changed
+- Update `@typescript-eslint` packages to latest major.
+
+### Removed
+- Deprecated `camelcase` rule.
 
 ## 12.7.0 - 2020-07-01
 ### Changed
