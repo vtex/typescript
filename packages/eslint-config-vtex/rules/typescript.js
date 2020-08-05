@@ -194,9 +194,7 @@ module.exports = {
           },
           {
             selector: [
-              'property',
-              'parameterProperty',
-              'enumMember',
+              'memberLike',
               // have to leave this for now as this rule
               // doesn't separate regular parameters from
               // destructured parameters
