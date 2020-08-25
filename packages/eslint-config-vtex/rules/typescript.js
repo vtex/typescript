@@ -199,13 +199,14 @@ module.exports = !hasTypescript
                 format: ['PascalCase'],
               },
               {
-                selector: [
-                  'memberLike',
-                  // have to leave this for now as this rule
-                  // doesn't separate regular parameters from
-                  // destructured parameters
-                  'parameter',
-                ],
+                selector: 'memberLike',
+                format: null,
+              },
+              {
+                // have to leave this for now as this rule
+                // doesn't separate regular parameters from
+                // destructured parameters
+                selector: 'parameter',
                 format: null,
               },
             ],
