@@ -8,10 +8,6 @@
     "dump-config": "eslint --print-config index.js > config-dump.json",
     "version": "chan release $npm_package_version && git add CHANGELOG.md"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vtex/javascript.git"
-  },
   "files": [
     "index.js",
     "io.js",
@@ -32,7 +28,12 @@
   "bugs": {
     "url": "https://github.com/vtex/javascript/issues"
   },
-  "homepage": "https://github.com/vtex/javascript#readme",
+  "homepage": "https://github.com/vtex/typescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtex/typescript.git",
+    "directory": "packages/eslint-config-vtex-react"
+  },
   "dependencies": {
     "eslint-config-vtex": "^12.8.6",
     "eslint-plugin-jsx-a11y": "^6.3.1",

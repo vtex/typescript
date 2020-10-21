@@ -8,10 +8,6 @@
     "dump-config": "eslint --print-config index.js > config-dump.json",
     "version": "chan release $npm_package_version && git add CHANGELOG.md"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vtex/javascript.git"
-  },
   "keywords": [
     "eslint",
     "config",
@@ -25,7 +21,12 @@
   "bugs": {
     "url": "https://github.com/vtex/javascript/issues"
   },
-  "homepage": "https://github.com/vtex/javascript#readme",
+  "homepage": "https://github.com/vtex/typescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtex/typescript.git",
+    "directory": "packages/eslint-config-vtex"
+  },
   "files": [
     "index.js",
     "rules/",
