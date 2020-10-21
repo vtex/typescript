@@ -237,6 +237,18 @@ module.exports = !hasTypescript
             // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
             //! Commented because we use the recommended version of this rule
             // '@typescript-eslint/ban-types': 'off',
+            // Disallow // @ts comments
+            // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-ts-comment.md
+            '@typescript-eslint/ban-ts-comment': [
+              'error',
+              {
+                'ts-expect-error': 'allow-with-description',
+                'ts-ignore': true,
+                'ts-nocheck': true,
+                'ts-check': false,
+                minimumDescriptionLength: 3,
+              },
+            ],
           },
         },
         {
