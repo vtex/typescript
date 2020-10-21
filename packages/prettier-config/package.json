@@ -5,9 +5,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "homepage": "https://github.com/vtex/typescript",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vtex/prettier-config.git"
+    "url": "https://github.com/vtex/typescript.git",
+    "directory": "packages/prettier-config"
   },
   "contributors": [
     "Christian Kaisermann <christian.andrade@vtex.com.br>"

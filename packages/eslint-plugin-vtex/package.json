@@ -11,8 +11,12 @@
   "bugs": {
     "url": "https://github.com/vtex/javascript/issues"
   },
-  "homepage": "https://github.com/vtex/javascript",
-  "repository": "https://github.com/vtex/javascript",
+  "homepage": "https://github.com/vtex/typescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtex/typescript.git",
+    "directory": "packages/eslint-plugin-vtex"
+  },
   "contributors": [
     "Christian Kaisermann <christian.andrade@vtex.com.br>"
   ],

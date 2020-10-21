@@ -4,6 +4,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "homepage": "https://github.com/vtex/typescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtex/typescript.git",
+    "directory": "packages/tsconfig"
+  },
   "main": "tsconfig.json",
   "license": "MIT",
   "scripts": {
