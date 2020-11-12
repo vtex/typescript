@@ -18,6 +18,14 @@ Main repository for VTEX's Typescript standards. Issues should be used to start 
 - [prettier-config](/packages/prettier-config) - prettier preset of all front-end projects
 - [tsconfig](/packages/tsconfig) - base tsconfig for all typescript projects
 
+## Add these packages to a new project
+
+### Bootstrap on a new node and typescript project
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/vtex/typescript/master/scripts/bootstrap-typescript.sh)"
+```
+
 ## Contributing
 
 Nothing is written in stone, so if there's some kind of rule or pattern that you wish to discuss or implement, we encourage an open discussion via this [repository issues](/issues). The project use labels to keep everything organized and easy-to-find:
