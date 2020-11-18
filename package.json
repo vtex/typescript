@@ -13,6 +13,15 @@
   "bugs": {
     "url": "https://github.com/vtex/javascript/issues"
   },
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean && lerna run clean",
+    "format:check": "prettier --list-different \"./**/*.{ts,js,json}\"",
+    "format": "prettier --write \"**/*.{ts,js,json}\"",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "test": "lerna run test --concurrency 1"
+  },
   "prettier": "@vtex/prettier-config",
   "husky": {
     "hooks": {
@@ -27,16 +36,6 @@
     "*.json": [
       "prettier --write"
     ]
-  },
-  "scripts": {
-    "build": "lerna run build",
-    "clean": "lerna clean && lerna run clean",
-    "format:check": "prettier --list-different \"./**/*.{ts,js,json}\"",
-    "format": "prettier --write \"**/*.{ts,js,json}\"",
-    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "eslint . --ext .js,.ts --fix",
-    "test": "lerna run test --concurrency 1",
-    "postinstall": "lerna bootstrap && yarn build && lerna link"
   },
   "devDependencies": {
     "@geut/chan": "^2.1.1",
