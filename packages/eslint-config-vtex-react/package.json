@@ -12,6 +12,7 @@
     "index.js",
     "io.js",
     "native.js",
+    "gatsby.js",
     "rules/"
   ],
   "keywords": [
