@@ -16,6 +16,6 @@
     "version": "chan release $npm_package_version && git add CHANGELOG.md"
   },
   "peerDependencies": {
-    "typescript": "^3.7.5"
+    "typescript": "^3 || ^4"
   }
 }
