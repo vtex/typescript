@@ -23,10 +23,11 @@ module.exports = !hasTypescript
               'tsconfig{.eslint.json,.json}',
               // look in dirs like node/react
               // TODO: can these negations be smarter?
-              '!(node_modules)*/tsconfig{.eslint.json,.json}',
+              '*/tsconfig{.eslint.json,.json}',
               // look in dirs like packages/package/*
-              '!(node_modules)*/!(node_modules)*/tsconfig{.eslint.json,.json}',
+              '*/*/tsconfig{.eslint.json,.json}',
             ],
+            projectFolderIgnoreList: ['node_modules/**/*'],
           },
           rules: {
             // Enforce explicit accessibility modifiers on class properties and methods

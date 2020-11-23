@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Fixed
 - Explicitly set a `jest` version for rule `jest/no-deprecated-functions` to work.
+- Fix `tsconfig` resolution.
 
 ## 12.8.9 - 2020-11-18
 ### Changed
