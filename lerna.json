@@ -11,7 +11,7 @@
         "LICENSE",
         "lerna.json"
       ],
-      "message": "chore(release): :robot: publish"
+      "message": "chore(release): :robot: publish v%s"
     }
   }
 }
