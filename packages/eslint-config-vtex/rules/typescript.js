@@ -255,6 +255,16 @@ module.exports = !hasTypescript
             // Disallows unnecessary constraints on generic types
             // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-constraint.md
             '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
+
+            // Enforces consistent usage of type imports
+            // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-imports.md
+            '@typescript-eslint/consistent-type-imports': [
+              'warn',
+              {
+                prefer: 'type-imports',
+                disallowTypeAnnotations: true,
+              },
+            ],
           },
         },
         {
