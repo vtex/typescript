@@ -238,6 +238,7 @@ module.exports = !hasTypescript
             // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
             //! Commented because we use the recommended version of this rule
             // '@typescript-eslint/ban-types': 'off',
+
             // Disallow // @ts comments
             // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-ts-comment.md
             '@typescript-eslint/ban-ts-comment': [
@@ -250,6 +251,10 @@ module.exports = !hasTypescript
                 minimumDescriptionLength: 3,
               },
             ],
+
+            // Disallows unnecessary constraints on generic types
+            // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-constraint.md
+            '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
           },
         },
         {
