@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- `@typescript-eslint/no-unnecessary-type-constraint` rule
+- `@typescript-eslint/no-unnecessary-type-constraint` rule.
+- `@typescript-eslint/consistent-type-imports` rule.
 
 ## 12.8.11 - 2020-11-23
 ### Fixed
