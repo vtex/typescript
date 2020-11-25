@@ -28,6 +28,16 @@ module.exports = {
             patterns: [],
           },
         ],
+
+        // Add useCustomClasses hook from vtex-apps/css-handles
+        // https://eslint.org/docs/rules/no-restricted-imports
+        'react-hooks/exhaustive-deps': [
+          'warn',
+          {
+            // regexp
+            additionalHooks: '(useCustomClasses)',
+          },
+        ],
       },
     },
   ],
