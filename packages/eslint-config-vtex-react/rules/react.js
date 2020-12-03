@@ -12,6 +12,9 @@ module.exports = {
     },
     linkComponents: [{ name: 'Link', linkAttribute: 'to' }],
   },
+  env: {
+    browser: true,
+  },
   rules: {
     // Disallow target="_blank" on links
     // https://github.com/yannickcr/eslint-plugin-react/blob/ac102885765be5ff37847a871f239c6703e1c7cc/docs/rules/jsx-no-target-blank.md
