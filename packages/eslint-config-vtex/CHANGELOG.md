@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `@typescript-eslint/no-unnecessary-type-constraint` rule.
 - `@typescript-eslint/consistent-type-imports` rule.
 
+### Fixed
+- `no-shadow` rule for TypeScript.
+
 ## 12.8.11 - 2020-11-23
 ### Fixed
 - Explicitly set a `jest` version for rule `jest/no-deprecated-functions` to work.
