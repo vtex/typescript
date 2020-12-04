@@ -271,7 +271,7 @@ module.exports = !hasTypescript
               'warn',
               {
                 prefer: 'type-imports',
-                disallowTypeAnnotations: true,
+                disallowTypeAnnotations: false,
               },
             ],
           },
