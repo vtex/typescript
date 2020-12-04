@@ -13,6 +13,7 @@ module.exports = {
 
     // Ensure native, external and internal imports are separated, above relative imports and that unassigned imports are ignored
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
+    // todo: add import-type to this, waiting for https://github.com/benmosher/eslint-plugin-import/issues/645
     'import/order': [
       'error',
       {
