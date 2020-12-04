@@ -1,5 +1,5 @@
 {
-  "name": "@vtex/javascript",
+  "name": "@vtex/typescript",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -9,9 +9,9 @@
     "Christian Kaisermann <christian.andrade@vtex.com.br>"
   ],
   "license": "MIT",
-  "repository": "vtex/javascript",
+  "repository": "vtex/typescript",
   "bugs": {
-    "url": "https://github.com/vtex/javascript/issues"
+    "url": "https://github.com/vtex/typescript/issues"
   },
   "scripts": {
     "build": "lerna run build",
