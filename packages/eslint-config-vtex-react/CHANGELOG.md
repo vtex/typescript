@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Move hooks config to `react-hooks` file.
+
 ## 6.8.6 - 2020-12-03
 ### Fixed
 - Add `env.browser: true` to react preset.

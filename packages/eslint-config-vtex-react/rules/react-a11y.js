@@ -1,7 +1,7 @@
 // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/
 module.exports = {
   extends: ['plugin:jsx-a11y/recommended'],
-  plugins: ['jsx-a11y', 'react'],
+  plugins: ['jsx-a11y'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
