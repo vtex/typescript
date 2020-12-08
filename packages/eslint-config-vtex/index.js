@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:vtex/recommended',
+    './rules/prettier.js',
     './rules/errors.js',
     './rules/node.js',
     './rules/style.js',
@@ -9,7 +10,6 @@ module.exports = {
     './rules/best-practices.js',
     './rules/imports.js',
     './rules/typescript.js',
-    './rules/prettier.js',
     './rules/tests.js',
   ],
   plugins: ['vtex'],

@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- Add convention for multi-line statements after ifs, whiles, fors, etc.
+
 ## 12.8.14 - 2020-12-04
 ### Changed
 - Allow to use `import()` for type annotations.
