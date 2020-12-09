@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Wrong preset extension.
+
 ## 6.9.0 - 2020-12-09
 ### Changed
 - Move hooks config to `react-hooks` file.
