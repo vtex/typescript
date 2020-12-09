@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 6.9.1 - 2020-12-09
 ### Fixed
 - Wrong preset extension.
 
