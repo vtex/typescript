@@ -3,7 +3,7 @@ module.exports = {
     // Allow brace-less single-line if, else if, else, for, while, or do, while still enforcing the use of curly braces for other instances.
     // ! Overrides definition on 'eslint-config-prettier'
     // https://eslint.org/docs/rules/curly
-    curly: ['error', 'multi-line'],
+    curly: ['error', 'multi-line', 'consistent'],
 
     // Require camel case names
     // https://eslint.org/docs/rules/camelcase
