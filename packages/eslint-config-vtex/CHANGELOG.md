@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 12.9.3 - 2020-12-16
 ### Fixed
 - Change `projectFolderIgnoreList` parameter to regexps.
 

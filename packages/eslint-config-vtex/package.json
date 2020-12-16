@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vtex",
-  "version": "12.9.2",
+  "version": "12.9.3",
   "description": "VTEX's eslint config",
   "main": "index.js",
   "scripts": {
