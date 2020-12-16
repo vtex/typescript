@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Change `projectFolderIgnoreList` parameter to regexps.
+
 ## 12.9.2 - 2020-12-11
 ### Added
 - `consistency` parameter to `curly` rule.
