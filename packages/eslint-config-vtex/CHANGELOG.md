@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [12.9.4] - 2021-01-29
 ### Changed
 - Update typescript-eslint dependencies
 
@@ -206,7 +208,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v12.3.2...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v12.9.4...HEAD
+[12.9.4]: https://github.com/vtex/typescript/compare/v12.9.3...v12.9.4
 [12.3.2]: https://github.com/vtex/typescript/compare/v12.3.1...v12.3.2
 [12.2.1]: https://github.com/vtex/javascript/compare/v12.2.0...v12.2.1
 [12.2.0]: https://github.com/vtex/javascript/compare/v12.1.0...v12.2.0
