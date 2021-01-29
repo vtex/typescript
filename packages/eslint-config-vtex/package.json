@@ -33,8 +33,8 @@
     "lib/"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.8.1",
-    "@typescript-eslint/parser": "^4.8.1",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-cypress": "^2.11.2",
