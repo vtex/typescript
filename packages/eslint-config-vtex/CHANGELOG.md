@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- `padding-line-between-statements` doesn't forces lines between cjs-import, import/order already handle them
 
 ## [12.9.4] - 2021-01-29
 ### Changed
