@@ -182,6 +182,13 @@ module.exports = {
         prev: ['function', 'class', 'multiline-block-like'],
         next: '*',
       },
+      // import/order already handle padding lines between cjs-imports
+      // see https://github.com/vtex/typescript/issues/82
+      {
+        blankLine: 'any',
+        prev: ['cjs-import'],
+        next: ['cjs-import'],
+      },
     ],
 
     // Require or disallow padding lines between class members
