@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Use `eslint-plugin-node` instead of deprecated native node rules.
+
+### Added
+- Encourage usage of Promise API for `fs` and `dns` node modules.
 
 ## [12.9.5] - 2021-03-15
 ### Fixed
@@ -25,6 +30,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 12.9.0 - 2020-12-09
 ### Added
 - Add convention for multi-line statements after ifs, whiles, fors, etc.
+
 
 ## 12.8.14 - 2020-12-04
 ### Changed

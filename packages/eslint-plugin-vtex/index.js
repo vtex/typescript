@@ -1,4 +1,5 @@
-/* eslint-disable global-require */
+/* eslint-disable node/global-require */
+
 module.exports = {
   configs: {
     recommended: require('./lib/configs/recommended.js'),
