@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [13.0.0] - 2021-03-16
 ### Changed
 - Use `eslint-plugin-node` instead of deprecated native node rules.
 
@@ -30,7 +32,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 12.9.0 - 2020-12-09
 ### Added
 - Add convention for multi-line statements after ifs, whiles, fors, etc.
-
 
 ## 12.8.14 - 2020-12-04
 ### Changed
@@ -218,7 +219,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v12.9.5...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v13.0.0...HEAD
+[13.0.0]: https://github.com/vtex/typescript/compare/v12.9.5...v13.0.0
 [12.9.5]: https://github.com/vtex/typescript/compare/v12.9.4...v12.9.5
 [12.9.4]: https://github.com/vtex/typescript/compare/v12.9.3...v12.9.4
 [12.3.2]: https://github.com/vtex/typescript/compare/v12.3.1...v12.3.2
