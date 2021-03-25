@@ -4,8 +4,8 @@
   "description": "VTEX's eslint config for React",
   "main": "index.js",
   "scripts": {
-    "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check",
-    "dump-config": "eslint --print-config index.js > config-dump.json",
+    "eslint-check": "eslint-config-prettier index.js",
+    "dump-config": "eslint-config-prettier index.js > config-dump.json",
     "version": "chan release $npm_package_version && git add CHANGELOG.md"
   },
   "files": [
@@ -42,7 +42,7 @@
     "eslint-plugin-react-hooks": "^4.1.0"
   },
   "peerDependencies": {
-    "eslint": "^6 || ^7",
+    "eslint": "^7",
     "prettier": "^1.18.2 || ^2.0.4",
     "typescript": "^3.8 || ^4.0.0"
   }

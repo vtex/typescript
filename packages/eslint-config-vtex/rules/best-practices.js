@@ -89,7 +89,8 @@ module.exports = {
 
     // Disallow the use of leading or trailing decimal points in numeric literals
     // https://eslint.org/docs/rules/no-floating-decimal
-    'no-floating-decimal': 'error',
+    // Disabled because prettier already handle this rule
+    'no-floating-decimal': 'off',
 
     // Disallow reassignments of native objects or read-only globals
     // https://eslint.org/docs/rules/no-global-assign
