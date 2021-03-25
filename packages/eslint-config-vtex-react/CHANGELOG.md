@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [8.0.0] - 2021-03-25
 ### Changed
-
 - `eslint-config-prettier` updated 6.15.0 to 8.1.0
 - Requires at least ESLint 7.0.0 now, because `eslint-config-prettier` drops support for ESLint 6, [see here](https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-700-2020-12-05)
 
@@ -124,7 +124,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add support for typescript by extending `eslint-config-vtex` v10.
 - Add more rules for a11y in components.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v6.9.4...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v8.0.0...HEAD
+[8.0.0]: https://github.com/vtex/typescript/compare/v6.9.4...v8.0.0
 [6.9.4]: https://github.com/vtex/typescript/compare/v6.9.1...v6.9.4
 [6.2.1]: https://github.com/vtex/javascript/compare/v6.2.0...v6.2.1
 [6.2.0]: https://github.com/vtex/javascript/compare/v6.1.1...v6.2.0

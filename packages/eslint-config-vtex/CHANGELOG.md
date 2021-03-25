@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [14.0.0] - 2021-03-25
 ### Changed
-
 - `eslint-config-prettier` updated 6.15.0 to 8.1.0
 - Requires at least ESLint 7.0.0 now, because `eslint-config-prettier` drops support for ESLint 6, [see here](https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-700-2020-12-05)
 
@@ -224,7 +224,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v13.0.0...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v14.0.0...HEAD
+[14.0.0]: https://github.com/vtex/typescript/compare/v13.0.0...v14.0.0
 [13.0.0]: https://github.com/vtex/typescript/compare/v12.9.5...v13.0.0
 [12.9.5]: https://github.com/vtex/typescript/compare/v12.9.4...v12.9.5
 [12.9.4]: https://github.com/vtex/typescript/compare/v12.9.3...v12.9.4
