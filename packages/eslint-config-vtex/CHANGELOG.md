@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- `eslint-config-prettier` updated 6.15.0 to 8.1.0
+- Requires at least ESLint 7.0.0 now, because `eslint-config-prettier` drops support for ESLint 6, [see here](https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-700-2020-12-05)
+
 ## [13.0.0] - 2021-03-16
 ### Changed
 - Use `eslint-plugin-node` instead of deprecated native node rules.
