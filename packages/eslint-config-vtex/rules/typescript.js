@@ -26,6 +26,9 @@ module.exports = !hasTypescript
               '*/*/tsconfig{.eslint.json,.json}',
             ],
             projectFolderIgnoreList: [/node_modules/i],
+            // We need this configuration to avoid performance issues in monorepos
+            // https://github.com/typescript-eslint/typescript-eslint/issues/1192#issuecomment-862414778
+            allowAutomaticSingleRunInference: true,
           },
           rules: {
             //! extensions of native eslint rules

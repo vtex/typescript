@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vtex",
-  "version": "14.0.0",
+  "version": "14.1.0",
   "description": "VTEX's eslint config",
   "main": "index.js",
   "scripts": {
@@ -33,8 +33,8 @@
     "lib/"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
     "confusing-browser-globals": "^1.0.10",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-cypress": "^2.11.2",
@@ -42,7 +42,7 @@
     "eslint-plugin-jest": "^24.3.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vtex": "^2.0.11"
+    "eslint-plugin-vtex": "^2.1.0"
   },
   "peerDependencies": {
     "eslint": "^7",

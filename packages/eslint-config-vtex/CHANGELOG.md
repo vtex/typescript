@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [14.1.0] - 2021-06-24
+### Fixed
+- Fix OOM on monorepos by optmizing parsing of typescript files
+
 ## [14.0.0] - 2021-03-25
 ### Changed
 - `eslint-config-prettier` updated 6.15.0 to 8.1.0
@@ -224,7 +228,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v14.0.0...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v14.1.0...HEAD
+[14.1.0]: https://github.com/vtex/typescript/compare/v14.0.0...v14.1.0
 [14.0.0]: https://github.com/vtex/typescript/compare/v13.0.0...v14.0.0
 [13.0.0]: https://github.com/vtex/typescript/compare/v12.9.5...v13.0.0
 [12.9.5]: https://github.com/vtex/typescript/compare/v12.9.4...v12.9.5
