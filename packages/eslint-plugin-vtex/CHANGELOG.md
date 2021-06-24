@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.1.0] - 2021-06-24
 ### Fixed
 - Fix OOM on monorepos by optmizing parsing of typescript files
 
@@ -44,6 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Missing files in packages.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/vtex/typescript/compare/v2.0.6...v2.1.0
 [1.0.3]: https://github.com/vtex/js-standards/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/vtex/js-standards/compare/v1.0.1...v1.0.2
