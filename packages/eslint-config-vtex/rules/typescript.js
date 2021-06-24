@@ -26,6 +26,7 @@ module.exports = !hasTypescript
               '*/*/tsconfig{.eslint.json,.json}',
             ],
             projectFolderIgnoreList: [/node_modules/i],
+            allowAutomaticSingleRunInference: true,
           },
           rules: {
             //! extensions of native eslint rules

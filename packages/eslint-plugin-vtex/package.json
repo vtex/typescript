@@ -36,8 +36,8 @@
     "collectCoverage": false
   },
   "devDependencies": {
-    "@typescript-eslint/experimental-utils": "^4.8.1",
-    "@typescript-eslint/parser": "^4.8.1",
+    "@typescript-eslint/experimental-utils": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
     "jest": "^24.8.0"
   },
   "peerDependencies": {
