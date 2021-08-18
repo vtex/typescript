@@ -793,7 +793,6 @@ Eslint rule: [`no-useless-escape`](https://eslint.org/docs/rules/no-useless-esca
 const foo = '\'this\' is "quoted"'
 
 // good
-const foo = '\'this\' is "quoted"'
 const foo = `my name is '${name}'`
 ```
 
