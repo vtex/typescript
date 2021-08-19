@@ -822,6 +822,20 @@ Never declare a function in a non-function block (`if`, `while`, etc). Assign th
 
 Eslint rule: [`no-loop-func`](https://eslint.org/docs/rules/no-loop-func.html)
 
+```js
+// bad
+for (let i=10; i; i--) {
+    (function() { return i; })();
+}
+
+// good
+const a = function() {};
+
+for (let i=10; i; i--) {
+    a();
+}
+```
+
 #### Functions - arguments-shadow
 
 Never name a parameter `arguments`. This will take precedence over the [`arguments` object that is given to every function scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments).
