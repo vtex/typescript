@@ -1315,8 +1315,6 @@ import foo, { named1, named2 } from 'foo'
 import foo, { named1, named2 } from 'foo'
 ```
 
-PAREI AQUI
-
 #### Modules - no-mutable-exports
 
 Do not export mutable bindings.
