@@ -1381,7 +1381,13 @@ Multiline imports should be indented just like multiline array and object litera
 import { longNameA, longNameB, longNameC, longNameD, longNameE } from 'path'
 
 // good
-import { longNameA, longNameB, longNameC, longNameD, longNameE } from 'path'
+import {
+  longNameA,
+  longNameB,
+  longNameC,
+  longNameD,
+  longNameE,
+} from 'path';
 ```
 
 #### Modules - no-webpack-loader-syntax
