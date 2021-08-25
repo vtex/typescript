@@ -1310,9 +1310,6 @@ import { named1, named2 } from 'foo'
 
 // good
 import foo, { named1, named2 } from 'foo'
-
-// good
-import foo, { named1, named2 } from 'foo'
 ```
 
 #### Modules - no-mutable-exports
