@@ -824,7 +824,7 @@ Eslint rule: [`no-loop-func`](https://eslint.org/docs/rules/no-loop-func.html)
 
 ```js
 // bad
-for (let i=10; i; i--) {
+for (let i = 10; i; i--) {
     (function() { return i; })();
 }
 
