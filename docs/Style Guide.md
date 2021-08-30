@@ -831,7 +831,7 @@ for (let i=10; i; i--) {
 // good
 const a = function() {};
 
-for (let i=10; i; i--) {
+for (let i = 10; i; i--) {
     a();
 }
 ```
