@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Deprecated
+- Raises minimal prettier to ^2.4.0 due to bracketSameLine rule breaking change
 
 ## 0.3.2 - 2020-10-21
 ### Changed
