@@ -1,6 +1,6 @@
 # `eslint-plugin-vtex`
 
-This package provides VTEX's custom ESLint rules.
+This package provides [VTEX](https://vtex.com/)'s custom ESLint rules.
 
 ## Installation
 
