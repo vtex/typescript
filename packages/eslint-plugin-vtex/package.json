@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vtex",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "VTEX's ESLint plugin",
   "main": "index.js",
   "files": [

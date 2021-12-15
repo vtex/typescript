@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.0] - 2021-12-15
 ### Deprecated
 - Raises minimal prettier to ^2.4.0 due to bracketSameLine rule breaking change
 
@@ -31,5 +33,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Changelog on deploy workflow.
 
-[Unreleased]: https://github.com/vtex/js-standards/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/vtex/typescript/compare/v0.3.2...v1.0.0
 [0.1.3]: https://github.com/vtex/js-standards/compare/v0.1.2...v0.1.3
