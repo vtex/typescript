@@ -23,6 +23,6 @@
     "version": "chan release $npm_package_version && git add CHANGELOG.md"
   },
   "peerDependencies": {
-    "prettier": ">=2.4.0"
+    "prettier": "^2.4.0"
   }
 }
