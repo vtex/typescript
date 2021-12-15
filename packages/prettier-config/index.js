@@ -31,7 +31,7 @@ module.exports = {
   bracketSpacing: true,
 
   // Put the > of a multi-line JSX element at the end of the last line instead of being alone on the next line
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
 
   // Include parentheses around a sole arrow function parameter.
   arrowParens: 'always',
