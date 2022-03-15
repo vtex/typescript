@@ -19,14 +19,10 @@
     "format:check": "prettier --list-different \"./**/*.{ts,js,json}\"",
     "format": "prettier --write \"**/*.{ts,js,json}\"",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx .",
-    "test": "lerna run test --concurrency 1"
+    "test": "lerna run test --concurrency 1",
+    "prepare": "husky install"
   },
   "prettier": "@vtex/prettier-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{ts,js}": [
       "eslint --fix",
@@ -38,11 +34,11 @@
   },
   "devDependencies": {
     "@geut/chan": "^2.1.1",
-    "eslint": "^7.14.0",
-    "husky": "^4.3.0",
+    "eslint": "^8.11.0",
+    "husky": "^7.0.0",
     "lerna": "^3.18.4",
-    "lint-staged": "^10.5.2",
+    "lint-staged": "^12.3.5",
     "prettier": "^2.2.0",
-    "typescript": "^3.8"
+    "typescript": "^4.6.2"
   }
 }
