@@ -64,6 +64,7 @@ jobs:
             --yes
 
       - name: Install packages and run test
+        if: steps.changed-packages.outputs.PACKAGES
         run: |
           yarn --cwd fixtures/app add \
             --registry http://localhost:4873 \
