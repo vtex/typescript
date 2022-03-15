@@ -50,6 +50,8 @@ jobs:
           yarn lerna publish \
             '0.0.0-verdaccio' \
             --registry http://localhost:4873 \
+            --no-git-tag-version \
+            --no-push \
             --yes
 
       - name: Install packages and run test
