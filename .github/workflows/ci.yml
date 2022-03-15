@@ -11,3 +11,41 @@ jobs:
         with:
           node-version: '14'
       - run: yarn && yarn lint
+
+  Test:
+    runs-on: ubuntu-latest
+    services:
+      verdaccio:
+        image: verdaccio/verdaccio:4.0.0
+        ports:
+          - 4873:4873
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: Verdaccio login
+        run: |
+          npx npm-cli-adduser \
+            -u username \
+            -p pass \
+            -e username@email.com \
+            -r http://localhost:4873 || true
+
+      - name: Configure git
+        run: |
+          git config --global user.name 'Verdaccio User'
+          git config --global user.email 'username@email.com'
+
+      - name: Publish packages
+        run: |
+          yarn lerna publish \
+            '0.0.0-verdaccio' \
+            --registry http://localhost:4873 \
+            --yes
+
+      - name: Install packages and run test
+        run: |
+          yarn -s lerna list | sed 's/$/\@0.0.0-verdaccio/' | xargs yarn --cwd fixtures/app add -D
+          yarn --cwd fixtures/app test
