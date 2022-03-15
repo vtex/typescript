@@ -30,7 +30,9 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn install --frozen-lockfile
+          yarn --cwd fixtures/app install --frozen-lockfile
 
       - name: Verdaccio login
         run: |
