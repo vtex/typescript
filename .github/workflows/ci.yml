@@ -63,5 +63,7 @@ jobs:
 
       - name: Install packages and run test
         run: |
-          yarn --cwd fixtures/app add -D ${{ steps.changed-packages.outputs.PACKAGES }}
+          yarn --cwd fixtures/app add \
+            --registry http://localhost:4873 \
+            -D ${{ steps.changed-packages.outputs.PACKAGES }}
           yarn --cwd fixtures/app test
