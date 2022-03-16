@@ -8,4 +8,65 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
-      - run: yarn && yarn lint
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run lint
+        run: yarn lint
+
+  'E2E_Tests':
+    runs-on: ubuntu-latest
+    services:
+      verdaccio:
+        image: verdaccio/verdaccio:4.0.0
+        ports:
+          - 4873:4873
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn --cwd fixtures/app install --no-lockfile
+
+      - name: Verdaccio login
+        run: |
+          npx npm-cli-adduser \
+            -u username \
+            -p pass \
+            -e username@email.com \
+            -r http://localhost:4873 || true
+
+      - name: Configure git
+        run: |
+          git config --global user.name 'Verdaccio User'
+          git config --global user.email 'username@email.com'
+
+      - name: Get changed packages
+        id: changed-packages
+        run: |
+          changed_packages=$(yarn -s lerna list --since | sed 's/$/\@0.0.0-verdaccio/' | xargs echo)
+
+          echo "::set-output name=PACKAGES::$changed_packages"
+
+      - name: Publish packages
+        run: |
+          yarn lerna publish \
+            '0.0.0-verdaccio' \
+            --registry http://localhost:4873 \
+            --no-git-tag-version \
+            --no-push \
+            --yes
+
+      - name: Install packages and run test
+        if: steps.changed-packages.outputs.PACKAGES
+        run: |
+          yarn --cwd fixtures/app add \
+            --registry http://localhost:4873 \
+            -D ${{ steps.changed-packages.outputs.PACKAGES }}
+          yarn --cwd fixtures/app test

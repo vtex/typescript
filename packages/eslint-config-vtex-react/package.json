@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vtex-react",
-  "version": "8.2.1",
+  "version": "9.0.0",
   "description": "VTEX's eslint config for React",
   "main": "index.js",
   "scripts": {
@@ -37,13 +37,13 @@
   },
   "dependencies": {
     "@vtex/eslint-plugin-admin-ui": "^0.2.9",
-    "eslint-config-vtex": "^14.1.2",
+    "eslint-config-vtex": "^15.0.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0"
   },
   "peerDependencies": {
-    "eslint": "^7",
+    "eslint": "^7 || ^8",
     "prettier": "^1.18.2 || ^2.0.4",
     "typescript": "^3.8 || ^4.0.0"
   }

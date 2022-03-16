@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "eslint --ext js,ts,jsx,tsx,mjs ."
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "*",
+    "eslint": "^7",
+    "eslint-config-vtex": "*",
+    "eslint-config-vtex-react": "*",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

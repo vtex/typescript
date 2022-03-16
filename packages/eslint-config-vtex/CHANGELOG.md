@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [15.0.0] - 2022-03-15
+### Changed
+- **BREAKING CHANGE** Upgrades `@typescript-eslint` dependencies to major 5.
+- **BREAKING CHANGE** Upgrades `eslint-plugin-prettier` to major 4, and bumps
+  `prettier` peer dependency to only target major 2.
+- **BREAKING CHANGE** Updates peer dependency on `eslint` to only target major 8.
+
 ## [14.1.1] - 2021-08-17
 ### Changed
 - Upgrades @typescript-eslint/\* deps to 4.29.2
@@ -232,7 +239,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v14.1.1...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v15.0.0...HEAD
+[15.0.0]: https://github.com/vtex/typescript/compare/v14.1.1...v15.0.0
 [14.1.1]: https://github.com/vtex/typescript/compare/v14.1.0...v14.1.1
 [14.1.0]: https://github.com/vtex/typescript/compare/v14.0.0...v14.1.0
 [14.0.0]: https://github.com/vtex/typescript/compare/v13.0.0...v14.0.0

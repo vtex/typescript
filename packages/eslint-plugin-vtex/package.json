@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vtex",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "VTEX's ESLint plugin",
   "main": "index.js",
   "files": [
@@ -36,11 +36,11 @@
     "collectCoverage": false
   },
   "devDependencies": {
-    "@typescript-eslint/experimental-utils": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
-    "jest": "^24.8.0"
+    "@typescript-eslint/experimental-utils": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "jest": "^27.5.1"
   },
   "peerDependencies": {
-    "eslint": "^6 || ^7"
+    "eslint": "^6 || ^7 || ^8"
   }
 }
