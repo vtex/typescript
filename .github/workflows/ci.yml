@@ -16,7 +16,7 @@ jobs:
       - name: Run lint
         run: yarn lint
 
-  Test:
+  'E2E_Tests':
     runs-on: ubuntu-latest
     services:
       verdaccio:
