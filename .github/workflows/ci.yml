@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile
-          yarn --cwd fixtures/app install --frozen-lockfile
+          yarn --cwd fixtures/app install --no-lockfile
 
       - name: Verdaccio login
         run: |
