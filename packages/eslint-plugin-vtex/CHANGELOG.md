@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `vtex/prefer-use-effect-named-callback` rule.
+
 ## [2.2.0] - 2022-03-15
 ### Changed
 - Include `eslint` major 8 in peer dependencies range.
