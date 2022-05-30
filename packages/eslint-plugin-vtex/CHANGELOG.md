@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.1] - 2022-05-30
 ### Added
 - `vtex/prefer-use-effect-named-callback` rule.
 
@@ -53,7 +54,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Missing files in packages.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v2.2.0...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v2.2.1...HEAD
+[2.2.1]: https://github.com/vtex/typescript/compare/v2.2.0...v2.2.1
 [2.2.0]: https://github.com/vtex/typescript/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/vtex/typescript/compare/v2.0.6...v2.1.0
 [1.0.3]: https://github.com/vtex/js-standards/compare/v1.0.2...v1.0.3
