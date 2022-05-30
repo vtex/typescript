@@ -11,7 +11,8 @@
         "LICENSE",
         "lerna.json"
       ],
-      "message": "chore(release): :robot: publish"
+      "message": "chore(release): :robot: publish",
+      "registry": "https://registry.npmjs.org"
     }
   }
 }
