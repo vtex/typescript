@@ -79,6 +79,6 @@ Please check the [`babel-eslint` documentation](https://github.com/babel/babel-e
 
 ## References
 
-- [`@typescript-eslint` documentation](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/README.md)
+- [`@typescript-eslint` documentation](https://typescript-eslint.io/docs/)
 - [`eslint-plugin-import` documentation](https://github.com/benmosher/eslint-plugin-import)
 - [`eslint-plugin-prettier` documentation](https://github.com/prettier/eslint-plugin-prettier)
