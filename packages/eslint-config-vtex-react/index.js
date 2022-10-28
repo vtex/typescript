@@ -1,8 +1,6 @@
 module.exports = {
-  plugins: ['@vtex/admin-ui'],
   extends: [
     'eslint-config-vtex',
-    'plugin:@vtex/admin-ui/recommended',
     './rules/react.js',
     './rules/react-hooks.js',
     './rules/react-a11y.js',
