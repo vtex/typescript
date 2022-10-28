@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Removed
+- Option `forceSuggestionFixer` that no longer exists.
+
 ## [15.0.0] - 2022-03-15
 ### Changed
 - **BREAKING CHANGE** Upgrades `@typescript-eslint` dependencies to major 5.

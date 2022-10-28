@@ -204,7 +204,6 @@ module.exports = !hasTypescript
               {
                 ignoreConditionalTests: true,
                 ignoreMixedLogicalExpressions: true,
-                forceSuggestionFixer: false,
               },
             ],
 
