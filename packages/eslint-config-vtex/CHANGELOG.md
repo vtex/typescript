@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [15.0.2] - 2022-10-28
 ### Removed
 - Option `forceSuggestionFixer` that no longer exists.
 
@@ -242,7 +243,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Lodash rules and prettier configs.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v15.0.0...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v15.0.2...HEAD
+[15.0.2]: https://github.com/vtex/typescript/compare/v15.0.0...v15.0.2
 [15.0.0]: https://github.com/vtex/typescript/compare/v14.1.1...v15.0.0
 [14.1.1]: https://github.com/vtex/typescript/compare/v14.1.0...v14.1.1
 [14.1.0]: https://github.com/vtex/typescript/compare/v14.0.0...v14.1.0
