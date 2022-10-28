@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [9.0.3] - 2022-10-28
 ### Removed
 - Deprecated eslint plugin and preset for VTEX Admin UI
 
@@ -130,7 +132,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add support for typescript by extending `eslint-config-vtex` v10.
 - Add more rules for a11y in components.
 
-[Unreleased]: https://github.com/vtex/typescript/compare/v9.0.0...HEAD
+[Unreleased]: https://github.com/vtex/typescript/compare/v9.0.3...HEAD
+[9.0.3]: https://github.com/vtex/typescript/compare/v9.0.0...v9.0.3
 [9.0.0]: https://github.com/vtex/typescript/compare/v8.0.0...v9.0.0
 [8.0.0]: https://github.com/vtex/typescript/compare/v6.9.4...v8.0.0
 [6.9.4]: https://github.com/vtex/typescript/compare/v6.9.1...v6.9.4

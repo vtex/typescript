@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vtex-react",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "description": "VTEX's eslint config for React",
   "main": "index.js",
   "scripts": {
