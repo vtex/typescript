@@ -1,16 +1,15 @@
-const { RuleTester } = require('eslint')
-
-const rule = require('../../../lib/rules/prefer-early-return')
+import { RuleTester } from '@typescript-eslint/utils/dist/ts-eslint'
+import { AST_NODE_TYPES } from '@typescript-eslint/types'
+import { preferEarlyReturn } from '../prefer-early-return'
 
 const ruleTester = new RuleTester()
 
 const error = {
-  message:
-    'Prefer an early return to prevent nesting and improve code readability',
-  type: 'IfStatement',
-}
+  messageId: 'default',
+  type: AST_NODE_TYPES.IfStatement,
+} as const
 
-ruleTester.run('prefer-early-return', rule, {
+ruleTester.run('prefer-early-return', preferEarlyReturn, {
   valid: [
     {
       code: `function foo() {
@@ -98,6 +97,7 @@ ruleTester.run('prefer-early-return', rule, {
           doSomethingElse();
         }
       }`,
+      options: [{ maxStatements: 1 }],
       errors: [error],
     },
     {
@@ -124,6 +124,7 @@ ruleTester.run('prefer-early-return', rule, {
           doSomethingElse();
         }
       }`,
+      options: [{ maxStatements: 1 }],
       errors: [error],
     },
     {
@@ -134,6 +135,7 @@ ruleTester.run('prefer-early-return', rule, {
         }
       }`,
       parserOptions: { ecmaVersion: 6 },
+      options: [{ maxStatements: 1 }],
       errors: [error],
     },
     {
@@ -143,6 +145,7 @@ ruleTester.run('prefer-early-return', rule, {
           doSomethingElse();
         }
       })`,
+      options: [{ maxStatements: 1 }],
       errors: [error],
     },
     {
@@ -153,6 +156,7 @@ ruleTester.run('prefer-early-return', rule, {
           doSomethingElse()
         }
       }`,
+      options: [{ maxStatements: 1 }],
       errors: [error],
     },
   ],
