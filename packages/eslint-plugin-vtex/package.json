@@ -1,11 +1,13 @@
 {
   "name": "eslint-plugin-vtex",
-  "version": "2.2.1",
+  "version": "2.2.6-alpha.0",
   "description": "VTEX's ESLint plugin",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
-    "lib/"
+    "docs",
+    "dist"
   ],
   "license": "MIT",
   "bugs": {
@@ -18,7 +20,8 @@
     "directory": "packages/eslint-plugin-vtex"
   },
   "contributors": [
-    "Christian Kaisermann <christian.andrade@vtex.com.br>"
+    "Christian Kaisermann <christian.andrade@vtex.com.br>",
+    "Gabriel Takashi Katakura <gabriel.katakura@vtex.com.br>"
   ],
   "keywords": [
     "eslint",
@@ -26,19 +29,38 @@
     "vtex"
   ],
   "scripts": {
+    "version": "chan release $npm_package_version && git add CHANGELOG.md",
+    "watch": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts --format esm,cjs,iife --dts",
     "test": "jest",
-    "version": "chan release $npm_package_version && git add CHANGELOG.md"
+    "prepare": "yarn build"
   },
   "jest": {
+    "transform": {
+      "\\.(js|ts)$": [
+        "babel-jest",
+        {
+          "configFile": "./test/babel.config.js"
+        }
+      ]
+    },
     "testPathIgnorePatterns": [
       "/node_modules/"
     ],
     "collectCoverage": false
   },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.15.0"
+  },
   "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-typescript": "^7.24.1",
     "@typescript-eslint/experimental-utils": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
-    "jest": "^27.5.1"
+    "babel-jest": "^29.7.0",
+    "jest": "^27.5.1",
+    "tsup": "^8.0.2"
   },
   "peerDependencies": {
     "eslint": "^6 || ^7 || ^8"
