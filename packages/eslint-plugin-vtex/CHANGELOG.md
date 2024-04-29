@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Changes entrypoint to dist/index.js
+- Support to ObjectPattern on the component props for `vtex/consistent-props-type`
 
 ## [2.2.1] - 2022-05-30
 ### Added

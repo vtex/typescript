@@ -96,6 +96,48 @@ ruleTester.run('consistent-props-type', consistentPropsType, {
 
     {
       code: `
+        function Divider({ inline }: { inline: boolean }) {
+          return <hr />
+        }
+      `,
+      errors: [
+        {
+          messageId: 'invalidInlinePropsType',
+          data: { expectedPropsTypeName: 'DividerProps' },
+        },
+      ],
+    },
+
+    {
+      code: `
+        function Divider({ inline, ...props }: { inline: boolean }) {
+          return <hr />
+        }
+      `,
+      errors: [
+        {
+          messageId: 'invalidInlinePropsType',
+          data: { expectedPropsTypeName: 'DividerProps' },
+        },
+      ],
+    },
+
+    {
+      code: `
+        function Divider({ ...props }: { inline: boolean }) {
+          return <hr />
+        }
+      `,
+      errors: [
+        {
+          messageId: 'invalidInlinePropsType',
+          data: { expectedPropsTypeName: 'DividerProps' },
+        },
+      ],
+    },
+
+    {
+      code: `
         const Divider = (props: { inline: boolean } & { intersection: true }) => {
           return <hr />
         }

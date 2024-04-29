@@ -35,7 +35,7 @@ export const consistentPropsType = createRule({
 
   create(context) {
     return {
-      ':function > Identifier > TSTypeAnnotation'(
+      ':function > :matches(Identifier, ObjectPattern) > TSTypeAnnotation'(
         node: TSESTree.TSTypeAnnotation
       ) {
         if (isInsideAnotherFunction(context)) return
