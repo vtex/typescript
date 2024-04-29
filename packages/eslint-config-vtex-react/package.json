@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vtex-react",
-  "version": "9.0.8-alpha.0",
+  "version": "9.1.0",
   "description": "VTEX's eslint config for React",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "directory": "packages/eslint-config-vtex-react"
   },
   "dependencies": {
-    "eslint-config-vtex": "^15.0.7-alpha.0",
+    "eslint-config-vtex": "^15.1.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0"
