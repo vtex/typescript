@@ -10,6 +10,6 @@ export const recommended: Linter.BaseConfig = {
       },
     ],
 
-    'vtex/consistent-props-type': 'warn',
+    'vtex/consistent-props-type': 'off',
   },
 }

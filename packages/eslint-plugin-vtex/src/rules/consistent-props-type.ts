@@ -13,7 +13,7 @@ export const consistentPropsType = createRule({
   meta: {
     type: 'suggestion',
     docs: {
-      recommended: 'warn',
+      recommended: false,
       description: 'Consistent way to define props type',
     },
     messages: {
@@ -35,80 +35,79 @@ export const consistentPropsType = createRule({
 
   create(context) {
     return {
-      ':function > :matches(Identifier, ObjectPattern) > TSTypeAnnotation'(
-        node: TSESTree.TSTypeAnnotation
-      ) {
-        if (isInsideAnotherFunction(context)) return
+      ':function > :matches(Identifier, ObjectPattern) > TSTypeAnnotation':
+        function (node: TSESTree.TSTypeAnnotation) {
+          if (isInsideAnotherFunction(context)) return
 
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        const functionNode = context
-          .getAncestors()
-          .reverse()
-          .find(isFunctionNode)!
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          const functionNode = context
+            .getAncestors()
+            .reverse()
+            .find(isFunctionNode)!
 
-        const functionName = getFunctionNodeName(functionNode)
-        const [typeParameter] = functionNode.typeParameters?.params ?? []
+          const functionName = getFunctionNodeName(functionNode)
+          const [typeParameter] = functionNode.typeParameters?.params ?? []
 
-        if (!isComponentName(functionName)) return
+          if (!isComponentName(functionName)) return
 
-        const expectedPropsTypeName = `${functionName}Props`
+          const expectedPropsTypeName = `${functionName}Props`
 
-        if (typeParameter) {
-          if (typeParameter.name.name !== 'Props') {
-            context.report({
-              node: typeParameter.name,
-              messageId: 'genericsPropsTypeName',
-            })
+          if (typeParameter) {
+            if (typeParameter.name.name !== 'Props') {
+              context.report({
+                node: typeParameter.name,
+                messageId: 'genericsPropsTypeName',
+              })
+            }
+
+            if (
+              typeParameter.constraint &&
+              typeParameter.constraint?.type !== 'TSTypeReference'
+            ) {
+              context.report({
+                node: typeParameter.constraint,
+                messageId: 'propsTypeIncomplete',
+                data: { expectedPropsTypeName },
+              })
+            }
+
+            if (
+              typeParameter.constraint?.type === 'TSTypeReference' &&
+              typeParameter.constraint.typeName.type === 'Identifier' &&
+              typeParameter.constraint.typeName.name !== expectedPropsTypeName
+            ) {
+              context.report({
+                node: typeParameter.constraint,
+                messageId: 'invalidPropsTypeName',
+                data: { expectedPropsTypeName },
+              })
+            }
+
+            return
           }
 
-          if (
-            typeParameter.constraint &&
-            typeParameter.constraint?.type !== 'TSTypeReference'
-          ) {
+          if (node.typeAnnotation.type !== 'TSTypeReference') {
             context.report({
-              node: typeParameter.constraint,
-              messageId: 'propsTypeIncomplete',
+              node: node.typeAnnotation,
+              messageId: 'invalidInlinePropsType',
               data: { expectedPropsTypeName },
             })
+
+            return
           }
 
           if (
-            typeParameter.constraint?.type === 'TSTypeReference' &&
-            typeParameter.constraint.typeName.type === 'Identifier' &&
-            typeParameter.constraint.typeName.name !== expectedPropsTypeName
+            node.typeAnnotation.typeName.type === 'Identifier' &&
+            node.typeAnnotation.typeName.name !== expectedPropsTypeName
           ) {
             context.report({
-              node: typeParameter.constraint,
+              node: node.typeAnnotation,
               messageId: 'invalidPropsTypeName',
               data: { expectedPropsTypeName },
             })
           }
-
-          return
-        }
-
-        if (node.typeAnnotation.type !== 'TSTypeReference') {
-          context.report({
-            node: node.typeAnnotation,
-            messageId: 'invalidInlinePropsType',
-            data: { expectedPropsTypeName },
-          })
-
-          return
-        }
-
-        if (
-          node.typeAnnotation.typeName.type === 'Identifier' &&
-          node.typeAnnotation.typeName.name !== expectedPropsTypeName
-        ) {
-          context.report({
-            node: node.typeAnnotation,
-            messageId: 'invalidPropsTypeName',
-            data: { expectedPropsTypeName },
-          })
-        }
-      },
-      'VariableDeclarator > Identifier > TSTypeAnnotation'(
+        },
+      'VariableDeclarator > Identifier > TSTypeAnnotation': function (
         node: TSESTree.TSTypeAnnotation & { parent: TSESTree.Identifier }
       ) {
         if (isInsideAnotherFunction(context)) return

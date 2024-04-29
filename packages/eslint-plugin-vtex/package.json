@@ -3,8 +3,8 @@
   "version": "2.2.5-alpha.0",
   "description": "VTEX's ESLint plugin",
   "main": "dist/index.js",
-  "module": "dist/eslint-plugin-vtex.esm.js",
-  "types": "dist/eslint-plugin-vtex.cjs.d.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "docs",
     "dist"
@@ -30,11 +30,10 @@
   ],
   "scripts": {
     "version": "chan release $npm_package_version && git add CHANGELOG.md",
-    "watch": "tsdx watch",
-    "build": "tsdx build",
+    "watch": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts --format esm,cjs,iife --dts",
     "test": "jest",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "yarn build"
   },
   "jest": {
     "transform": {
@@ -57,12 +56,12 @@
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
     "@babel/preset-typescript": "^7.24.1",
-    "@types/eslint": "^8.56.10",
     "@typescript-eslint/experimental-utils": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "babel-jest": "^29.7.0",
+    "eslint-plugin-jest": "^28.3.0",
     "jest": "^27.5.1",
-    "tsdx": "^0.14.1"
+    "tsup": "^8.0.2"
   },
   "peerDependencies": {
     "eslint": "^6 || ^7 || ^8"
