@@ -1,5 +1,6 @@
 import { RuleTester } from '@typescript-eslint/utils/dist/ts-eslint'
 import { AST_NODE_TYPES } from '@typescript-eslint/types'
+
 import { preferEarlyReturn } from '../prefer-early-return'
 
 const ruleTester = new RuleTester()

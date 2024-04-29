@@ -1,5 +1,6 @@
 import type { TSESTree } from '@typescript-eslint/utils'
-import { createRule } from "../createRule"
+
+import { createRule } from '../createRule'
 
 const USE_EFFECT_NAME = 'useEffect'
 
@@ -40,18 +41,21 @@ export const preferUseEffectNamedCallback = createRule({
     type: 'layout',
     docs: {
       recommended: 'error',
-      description: 'Prefer useEffect with named function or constant callbacks.',
+      description:
+        'Prefer useEffect with named function or constant callbacks.',
     },
     messages: {
-      default: 'Prefer useEffect with named function or constant callbacks.'
+      default: 'Prefer useEffect with named function or constant callbacks.',
     },
-    schema: []
+    schema: [],
   },
 
   defaultOptions: [],
 
   create(context) {
-    function checkUseEffectCallExpression(callExpressionNode: TSESTree.CallExpression) {
+    function checkUseEffectCallExpression(
+      callExpressionNode: TSESTree.CallExpression
+    ) {
       if (!checkCallExpressionIsUseEffect(callExpressionNode)) {
         return
       }
@@ -86,5 +90,5 @@ export const preferUseEffectNamedCallback = createRule({
     return {
       CallExpression: checkUseEffectCallExpression,
     }
-  }
+  },
 })

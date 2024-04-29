@@ -1,8 +1,10 @@
 import type { TSESTree } from '@typescript-eslint/utils'
 
-import { createRule } from "../createRule"
+import { createRule } from '../createRule'
 
-function isLonelyIfStatement(node: TSESTree.Node): node is TSESTree.IfStatement {
+function isLonelyIfStatement(
+  node: TSESTree.Node
+): node is TSESTree.IfStatement {
   return node.type === 'IfStatement' && node.alternate == null
 }
 
@@ -30,8 +32,9 @@ export const preferEarlyReturn = createRule<Options, any, any>({
       },
     ],
     messages: {
-      default: 'Prefer an early return to prevent nesting and improve code readability'
-    }
+      default:
+        'Prefer an early return to prevent nesting and improve code readability',
+    },
   },
 
   defaultOptions: [{ maxStatements: 1 }],
@@ -58,7 +61,12 @@ export const preferEarlyReturn = createRule<Options, any, any>({
       )
     }
 
-    function checkFunctionBody(fnNode: TSESTree.FunctionDeclaration | TSESTree.FunctionExpression | TSESTree.ArrowFunctionExpression) {
+    function checkFunctionBody(
+      fnNode:
+        | TSESTree.FunctionDeclaration
+        | TSESTree.FunctionExpression
+        | TSESTree.ArrowFunctionExpression
+    ) {
       const bodyNode = fnNode.body
 
       if (bodyNode.type !== 'BlockStatement' || bodyNode.body.length === 0) {
@@ -73,7 +81,7 @@ export const preferEarlyReturn = createRule<Options, any, any>({
 
       context.report({
         node: lastNode,
-        messageId: 'default'
+        messageId: 'default',
       })
     }
 
