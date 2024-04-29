@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `vtex/consistent-props-type` rule
 
+### Fixed
+- Changes entrypoint to dist/index.js
+
 ## [2.2.1] - 2022-05-30
 ### Added
 - `vtex/prefer-use-effect-named-callback` rule.

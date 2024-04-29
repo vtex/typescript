@@ -2,7 +2,7 @@
   "name": "eslint-plugin-vtex",
   "version": "2.2.2-alpha.0",
   "description": "VTEX's ESLint plugin",
-  "main": "dist/eslint-plugin-vtex.cjs.js",
+  "main": "dist/index.js",
   "module": "dist/eslint-plugin-vtex.esm.js",
   "types": "dist/eslint-plugin-vtex.cjs.d.ts",
   "files": [
