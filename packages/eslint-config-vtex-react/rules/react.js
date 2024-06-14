@@ -118,6 +118,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md
     'react/no-this-in-sfc': 'error',
 
+    // Prevent creating unstable components inside components
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md,
+    'react/no-unstable-nested-components': 'error',
+
     // Enforce the style attribute to be an object
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
     // TODO maybe enable? it's annoying for the style prop of react-intl components
